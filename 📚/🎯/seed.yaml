@@ -1,0 +1,26 @@
+$schema: "../../📓.yaml"
+
+id: "glyph://intent"
+kind: "glyph"
+
+intent:
+  goal: "To describe the purpose, goals, and operational triggers of an atom."
+
+glyph:
+  symbol: "🎯"
+  name: "intent"
+  description: |
+    The '🎯' property is a structured object that defines why an atom exists
+    and what it aims to achieve. It is the core of the atom's purpose.
+
+spec:
+  type: "object"
+  required:
+    - "goal"
+    - "role"
+  properties:
+    goal: { type: "string" }
+    role: { type: "string" }
+    conditions: { type: "array", items: { type: "string" } }
+    provides: { type: "array", items: { type: "string" } }
+    requires: { type: "array", items: { type: "string" } }

@@ -1,7 +1,7 @@
 # Standard JSON Schema declaration.
 $schema: "https://json-schema.org/draft/2020-12/schema"
 # The schema itself must know where it lives.
-$path: "example.com/λ/⚛/🆔/schema.yaml"
+$path: "example.com/λ/⚛/🆔/📓.yaml"
 
 # Custom Kairos/Sigma metadata for the Identity morphism.
 $intent: "Narrows the general Morphism schema for the specific case of Identity (🆔)."
@@ -10,13 +10,13 @@ $evolve:
 
 allOf:
   # 1. Inherit all common properties from the parent morphism schema.
-  - $ref: "example.com/λ/schema.yaml"
+  - $ref: "example.com/λ/📓.yaml"
 
   # 2. Add specific, narrowing constraints for the Identity morphism.
   - type: object
     properties:
       # Enforce the M0 Beacon principle for the seed file itself.
-      '$path':
+      "$path":
         const: "example.com/λ/⚛/🆔/seed.yaml"
       id:
         pattern: "^seed://morphism\.identity\.v[0-9]+$"
@@ -30,7 +30,7 @@ allOf:
       spec:
         properties:
           schema:
-            const: "example.com/λ/⚛/🆔/schema.yaml"
+            const: "example.com/λ/⚛/🆔/📓.yaml"
           purity:
             const: "100% (referentially transparent)"
           category_theory:
@@ -44,7 +44,7 @@ allOf:
                 items: { type: string }
                 const:
                   - "seed.yaml"
-                  - "schema.yaml"
+                  - "📓.yaml"
                   - "README.md"
                   - "proof.yaml"
               dirs:
@@ -58,4 +58,4 @@ allOf:
           - layout
     required:
       - id
-      - '$path'
+      - "$path"

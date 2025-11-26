@@ -1,3 +1,4 @@
+$schema: "./📓.yaml"
 $path: "example.com/🧠/😇/🛡️/seed.yaml"
 id: "seed://agent.guardian.v1"
 kind: "agent"
@@ -34,7 +35,7 @@ io:
       type: "validation_result"
 
 spec:
-  schema: "example.com/🧠/😇/🛡️/schema.yaml"
+  schema: "example.com/🧠/😇/🛡️/📓.yaml"
   purity: "impure" # Interacts with the filesystem
   constraints:
     - "must have read access to the entire repository"

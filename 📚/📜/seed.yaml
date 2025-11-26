@@ -1,0 +1,21 @@
+$schema: "../../📓.yaml"
+
+id: "glyph://spec"
+kind: "glyph"
+
+intent:
+  goal: "To provide a formal, machine-readable specification for an atom."
+
+glyph:
+  symbol: "📜"
+  name: "spec"
+  description: |
+    The '📜' property contains the formal specification of an atom, including
+    references to its schema, type definitions, and internal constraints.
+
+spec:
+  type: "object"
+  properties:
+    schema: { type: "string" }
+    types: { type: "object" }
+    constraints: { type: "array", items: { type: "string" } }

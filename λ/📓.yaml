@@ -1,6 +1,7 @@
-# Standard JSON Schema declaration.
-$schema: "https://json-schema.org/draft/2020-12/schema"
-
+# Standard JSON Sc
+$path: "example.com/λ/📓.yaml"
+$schema: "http://json-schema.org/draft-07/schema#"
+$id: "example.com/λ/📓.yaml"
 # Custom Kairos/Sigma metadata for the general Morphism schema.
 $intent: >
   This is the parent schema for all morphism atoms. It defines the common
@@ -18,9 +19,9 @@ $evolve:
 # The JSON Schema definition for any Morphism Seed.
 # It assumes it will be extended by a more general root schema defining 'id'.
 type: object
-required: [kind, intent, io, spec, '$path']
+required: [kind, intent, io, spec, "$path"]
 properties:
-  '$path':
+  "$path":
     type: string
     pattern: "^example.com/λ/⚛/.+\/seed\.yaml$" # Updated pattern for generic seed.yaml
   kind:
@@ -58,10 +59,14 @@ properties:
     properties:
       schema:
         type: string
-        pattern: "^example.com/λ/⚛/.+\/schema\.yaml$" # Updated pattern for generic schema.yaml
+        pattern: "^example.com/λ/⚛/.+\/📓\.yaml$" # Updated pattern for generic schema.yaml
       purity:
         type: string
-        enum: ["100% (referentially transparent)", "99% (pure with exceptions)", "impure"]
+        enum: [
+          "100% (referentially transparent)",
+          "99% (pure with exceptions)",
+          "impure",
+        ]
       category_theory:
         type: string
       layout: # Layout is now defined here.

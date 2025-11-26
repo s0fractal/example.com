@@ -15,7 +15,7 @@ If a directory represents a conceptual atom and is named with a unique identifie
 ```
 /🆔
   ├─ 🆔.seed.yaml
-  └─ 🆔.schema.yaml
+  └─ 🆔.📓.yaml
 ```
 *Reasoning: The `🆔` prefix is noise. We already know we are inside the `🆔` atom.*
 
@@ -23,10 +23,10 @@ If a directory represents a conceptual atom and is named with a unique identifie
 ```
 /🆔
   ├─ seed.yaml
-  ├─ schema.yaml
+  ├─ 📓.yaml
   └─ README.md
 ```
-*Reasoning: The folder `🆔` provides the context. The files `seed.yaml`, `schema.yaml`, and `README.md` clearly describe their function within that context.*
+*Reasoning: The folder `🆔` provides the context. The files `seed.yaml`, `📓.yaml`, and `README.md` clearly describe their function within that context.*
 
 ## Implications
 
@@ -43,7 +43,7 @@ If a directory represents a conceptual atom and is named with a unique identifie
 -   **Decision:** The initial file structure for the `identity` morphism will be refactored to follow this principle.
 -   **Refactoring Steps:**
     -   `.../🆔/🆔.seed.yaml` → `.../🆔/seed.yaml`
-    -   `.../🆔/🆔.schema.yaml` → `.../🆔/schema.yaml`
+    -   `.../🆔/🆔.📓.yaml` → `.../🆔/📓.yaml`
     -   `.../🆔/🆔.md` → `.../🆔/README.md`
 -   **Implementation:**
     -   See commit history related to the refactoring of the `🆔` atom.

@@ -1,0 +1,8 @@
+---
+$path: "example.com/🧠/😇/🌐/README.md"
+---
+# 🌐 Server Angel
+
+> This file is auto-generated.
+>
+> **Goal:** To serve the project repository over HTTP at example.com.

@@ -1,12 +1,12 @@
 # Standard JSON Schema declaration.
 $schema: "https://json-schema.org/draft/2020-12/schema"
-$path: "example.com/🧠/😇/🛡️/schema.yaml"
+$path: "example.com/🧠/😇/🛡️/📓.yaml"
 
 $intent: "Narrows the general Angel schema for the specific case of the Guardian (🛡️) angel, whose role is to enforce M0 Beacon."
 
 allOf:
   # 1. Inherit common properties from the parent Angel schema.
-  - $ref: "example.com/🧠/😇/schema.yaml"
+  - $ref: "example.com/🧠/😇/📓.yaml"
 
   # 2. Add specific, narrowing constraints for the Guardian angel.
   - type: object
@@ -24,7 +24,7 @@ allOf:
       spec:
         properties:
           schema:
-            const: "example.com/🧠/😇/🛡️/schema.yaml"
+            const: "example.com/🧠/😇/🛡️/📓.yaml"
       runtime:
         properties:
           entrypoint:

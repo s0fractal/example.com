@@ -22,7 +22,7 @@ spec:
     # An array of glob patterns for allowed files.
     files:
       - "seed.yaml"
-      - "schema.yaml"
+      - "📓.yaml"
       - "README.md"
       - "*.ts" # Allows for any TypeScript files
     

@@ -1,0 +1,24 @@
+# This seed defines the '🆔' glyph itself.
+# It's a meta-atom in our system's language.
+
+$schema: "../../📓.yaml" # We need a schema for glyphs, for now we can point to the root one.
+
+id: "glyph://id"
+kind: "glyph"
+
+intent:
+  goal: "To represent the unique, immutable identity of any atom in the system."
+
+# Glyph-specific properties
+glyph:
+  symbol: "🆔"
+  name: "identity"
+  description: |
+    The '🆔' property holds the unique and stable identifier for an atom,
+    formatted as a URI (e.g., 'seed://...'). It is the atom's soul,
+    independent of its location in any filesystem.
+
+# Specification for the VALUE that this glyph-property holds
+spec:
+  type: "string"
+  pattern: "^[a-z]+://.+"

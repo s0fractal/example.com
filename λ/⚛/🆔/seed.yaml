@@ -28,7 +28,7 @@ io:
       type: "a" # Must be the same as the input type
 
 spec:
-  schema: "example.com/λ/⚛/🆔/schema.yaml"
+  schema: "example.com/λ/⚛/🆔/📓.yaml"
   purity: "100% (referentially transparent)"
   category_theory: "Neutral element for function composition"
   types:
@@ -43,7 +43,7 @@ spec:
     strict: true
     files:
       - "seed.yaml"
-      - "schema.yaml"
+      - "📓.yaml"
       - "README.md"
       - "proof.yaml" # Proof metadata
     dirs: []

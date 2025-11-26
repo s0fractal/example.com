@@ -1,0 +1,42 @@
+# Standard JSON Schema declaration.
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$path: "example.com/📓.yaml"
+
+$intent: >
+  Defines the structure for the root 'repo' atom using glyphs. This is the schema
+  for the seed that represents the entire repository itself.
+
+type: object
+required: ['$path', '🆔', '🏷️', '🎯', '❤️', '📜']
+properties:
+  '$path':
+    const: "example.com/seed.yaml"
+  '🆔':
+    type: string
+    pattern: "^seed://.+"
+  '🏷️':
+    type: string
+    enum:
+      - "repo"
+  '🎯':
+    type: object
+    properties:
+      goal: { type: "string" }
+      role: { type: "string" }
+  '❤️':
+    type: object
+  '🔗':
+    type: array
+  '🔌':
+    type: object
+  '📜':
+    type: object
+    properties:
+      schema:
+        type: string
+      layout:
+        type: object
+        properties:
+          strict: { type: "boolean" }
+          files: { type: "array", items: { type: "string" } }
+          dirs: { type: "array", items: { type: "string" } }

@@ -53,7 +53,7 @@ function getEmbeddedPath(content: string): string | null {
 
 async function checkM0Beacon(): Promise<CheckResult[]> {
   const results: CheckResult[] = [];
-  const globPattern = "**/*.{seed.yaml,schema.yaml,md}";
+  const globPattern = "**/*.{seed.yaml,📓.yaml,md}";
   const projectRoot = Deno.cwd();
 
   const globOptions = {

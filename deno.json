@@ -2,7 +2,8 @@
   "tasks": {
     "🧊": "echo 'Stay frosty'",
     "<0001f9ca>": "echo 'Stay frosty'",
-    "shield:check": "deno run -A @/🧠/😇/🛡️/reflex.ts"
+    "shield:check": "deno run -A @/🧠/😇/🛡️/reflex.ts",
+    "guard:schema": "deno run -A @/🧠/😇/📜/reflex.ts"
   },
   "imports": {
     "@/": "./",

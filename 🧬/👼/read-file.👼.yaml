@@ -1,0 +1,11 @@
+# Angel / Ability Definition: Read File
+# Instance of the 👼Ability schema
+
+👼:
+  🜁: "ability://read-file"       # Unique ID for this ability
+  ↦:                             # Input schema for this ability
+    path: 𝕊                      # The path to the file to read (string)
+  ⇾:                             # Output schema for this ability
+    content: 𝕊                   # The content of the file (string)
+    success: 𝔹                   # True if file was read successfully (boolean)
+  ✦: 2                           # Cost in energy to use this ability

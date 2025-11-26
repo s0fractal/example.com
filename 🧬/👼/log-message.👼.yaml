@@ -1,0 +1,11 @@
+# Angel / Ability Definition: Log Message
+# Instance of the 👼Ability schema
+
+👼:
+  🜁: "ability://log-message"     # Unique ID for this ability
+  ↦:                             # Input schema for this ability
+    message: 𝕊                   # The message to log (string)
+    level: 𝕊                     # Optional: level (e.g., "info", "warn", "error")
+  ⇾:                             # Output schema for this ability
+    success: 𝔹                   # True if logging was successful (boolean)
+  ✦: 1                           # Cost in energy to use this ability

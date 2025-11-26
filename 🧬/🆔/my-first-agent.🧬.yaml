@@ -1,0 +1,12 @@
+# DNA of My First Agent
+# Instance of the 🧬Agent schema
+
+🧬:
+  🜁: "agent://my-first-agent"    # Unique ID for this agent
+  ⚘: "explorer"                  # Form or role of the agent
+  ⟁: ["observe", "report"]       # Intents: what this agent focuses on
+  ✦: 5                           # Energy level or potency
+  👼: ["ability://log-message", "ability://read-file"] # Abilities (references to Angel glyphs)
+  🜄:                             # Current state of the agent
+    last_action: "initialized"
+    status: "active"

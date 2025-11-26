@@ -1,0 +1,21 @@
+# Σ-core (v0.0.1) - Formal Language Definition
+
+# 1.1. Atomic Types
+# These are the 7 fundamental types, forming the minimal core.
+types:
+  𝕊: { description: "String type", glyph: "𝕊" }
+  ℕ: { description: "Number type", glyph: "ℕ" }
+  𝔹: { description: "Boolean type", glyph: "𝔹" }
+  ⟦⟧: { description: "Object type", glyph: "⟦⟧" }
+  ⟪⟫: { description: "Array type", glyph: "⟪⟫" }
+  ⊡: { description: "Reference type", glyph: "⊡" }
+  ◇: { description: "Unit/Null type", glyph: "◇" }
+
+# 1.2. Structure Definition Principle
+# In Σ-core, a structure (object schema) is defined as a mapping
+# of keys (which can be glyphs) to types (atomic glyphs or other structures/references).
+# Example (conceptual, not a literal schema):
+# ⟦ObjectName⟧:
+#   🜁: 𝕊       # '🜁' (id) is of type String
+#   ⚘: 𝕊       # '⚘' (form) is of type String
+#   👼: ⟪⊡⟫    # '👼' (abilities) is an Array of References

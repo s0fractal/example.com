@@ -1,0 +1,12 @@
+# Angel / Ability Definition: Record Pain
+# This ability records a "pain signal" into the system's ⚡.json file.
+
+👼:
+  🜁: "ability://record-pain" # Unique ID for this ability
+  ↦:                             # Input schema for this ability
+    id: 𝕊                         # Unique identifier for the pain type (e.g., "file-not-found-error")
+    description: 𝕊                # Human-readable description of the pain
+    details: ⟦⟧                   # Optional: Object containing additional context or stack trace
+  ⇾:                             # Output schema for this ability
+    success: 𝔹                   # True if the pain was recorded successfully
+  ✦: 1                           # Cost in energy to use this ability (minimal)

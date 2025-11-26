@@ -1,0 +1,69 @@
+# Non-semantic Glyphs & Agent/Morphism Definitions
+# These glyphs provide high-level semantic meaning and map to formal Σ-core structures.
+
+# Conceptual Glyphs (often used as keys within schemas)
+# 🜁 - General Identifier (concept)
+🜁:
+  description: "General Identifier / ID (conceptual key)"
+  suggested_type: 𝕊 # Often a string
+
+# ⚘ - Form / Scope (concept)
+⚘:
+  description: "Form / Scope / Shape (conceptual key)"
+  suggested_type: 𝕊 # Often a string
+
+# ⟁ - Intent / Field of Attention (concept)
+⟁:
+  description: "Intent / Field of Attention (conceptual key)"
+  suggested_type: ⟪𝕊⟫ # Often an Array of strings (e.g., intent names)
+
+# ✦ - Potency / Energy (concept)
+✦:
+  description: "Potency / Energy Level (conceptual key)"
+  suggested_type: ℕ # Often a number
+
+# 🜄 - Source / Context / State (concept)
+🜄:
+  description: "Source / Context / State (conceptual key)"
+  suggested_type: ⟦⟧ # Often an object
+
+# ↦ - Input (conceptual key for morphisms)
+↦:
+  description: "Input / From (conceptual key for morphisms)"
+  suggested_type: ⟦⟧ # Often an object or reference
+
+# ⇾ - Output (conceptual key for morphisms)
+⇾:
+  description: "Output / To (conceptual key for morphisms)"
+  suggested_type: ⟦⟧ # Often an object or reference
+
+# Structural Glyphs (define schemas for entities/concepts)
+
+# 🧬 - Agent DNA / Genome (structure)
+🧬:
+  description: "Agent DNA / Genome - Defines the structure of an agent entity."
+  schema:
+    🜁: 𝕊         # id
+    ⚘: 𝕊         # form
+    ⟁: ⟪𝕊⟫       # intents
+    ✦: ℕ         # energy
+    👼: ⟪⊡⟫       # abilities (Array of References to Angel/Ability glyphs)
+    🜄: ⟦⟧        # state (an object)
+
+# 👼 - Angel / Ability / Morphism (structure)
+👼:
+  description: "Angel / Ability / Morphism Definition - Defines the structure of an agent's capability."
+  schema:
+    🜁: 𝕊         # id
+    ↦: ⟦⟧        # input schema (an object)
+    ⇾: ⟦⟧        # output schema (an object)
+    ✦: ℕ         # cost (numeric energy cost)
+
+# ⟡ - Interaction Morphism (structure)
+⟡:
+  description: "Interaction Morphism - Represents an interaction between agents/entities."
+  schema:
+    ↦: ⊡         # from (reference to an Agent/Entity)
+    ⇾: ⊡         # to (reference to an Agent/Entity)
+    👼: ⊡         # via (reference to an Ability glyph)
+    🜄: ⟦⟧        # args (arguments/context for the interaction)

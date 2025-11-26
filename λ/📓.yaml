@@ -1,6 +1,6 @@
 🌟: "http://json-schema.org/draft-07/schema#"
-$path: "example.com/λ/📓.yaml"
-$id: "example.com/λ/📓.yaml"
+$path: "🏠://λ/📓.yaml"
+$id: "🏠://λ/📓.yaml"
 # Custom Kairos/Sigma metadata for the general Morphism schema.
 $intent: >
   This is the parent schema for all morphism atoms. It defines the common
@@ -22,7 +22,7 @@ $evolve:
 📝:
   "$path":
     🗃️: string
-    ♾️: "^example.com/λ/⚛/.+\/🧬\.yaml$"
+    ♾️: "^🏠://λ/⚛/.+\/🧬\.yaml$"
   kind:
     🗃️: string
     🔒: "morphism"
@@ -58,7 +58,7 @@ $evolve:
     📝:
       schema:
         🗃️: string
-        ♾️: "^example.com/λ/⚛/.+\/📓\.yaml$"
+        ♾️: "^🏠://λ/⚛/.+\/📓\.yaml$"
       purity:
         🗃️: string
         📊: [

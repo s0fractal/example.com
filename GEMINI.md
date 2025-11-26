@@ -1,5 +1,5 @@
 ---
-$path: "example.com/GEMINI.md"
+$path: "🏠://GEMINI.md"
 ---
 # GEMINI Protocol: Gnosis & Praxis
 

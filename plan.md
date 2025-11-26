@@ -1,5 +1,5 @@
 ---
-$path: "example.com/plan.md"
+$path: "🏠://plan.md"
 ---
 # План Дій: Побудова Runtime для Σ-Calculus в `example.com`
 

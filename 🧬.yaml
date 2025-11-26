@@ -1,5 +1,5 @@
 $schema: "./📓.yaml"
-$path: "example.com/🧬.yaml"
+$path: "🏠://🧬.yaml"
 
 # --- Main Atom Definition using Glyphs ---
 
@@ -29,7 +29,7 @@ $path: "example.com/🧬.yaml"
   input: []
   output: []
 📜:
-  schema: "example.com/λ/📓.yaml"
+  schema: "🏠://λ/📓.yaml"
   types: {}
   constraints:
     - "All contained atoms must be valid seeds."

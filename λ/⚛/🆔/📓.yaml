@@ -1,6 +1,6 @@
 🌟: "https://json-schema.org/draft/2020-12/schema"
 # The schema itself must know where it lives.
-$path: "example.com/λ/⚛/🆔/📓.yaml"
+$path: "🏠://λ/⚛/🆔/📓.yaml"
 
 # Custom Kairos/Sigma metadata for the Identity morphism.
 $intent: "Narrows the general Morphism schema for the specific case of Identity (🆔)."
@@ -9,14 +9,14 @@ $evolve:
 
 🤝:
   # 1. Inherit all common properties from the parent morphism schema.
-  - ➡️: "example.com/λ/📓.yaml"
+  - ➡️: "🏠://λ/📓.yaml"
 
   # 2. Add specific, narrowing constraints for the Identity morphism.
   - 🗃️: object
     📝:
       # Enforce the M0 Beacon principle for the 🧬 file itself.
       "$path":
-        🔒: "example.com/λ/⚛/🆔/🧬.yaml"
+        🔒: "🏠://λ/⚛/🆔/🧬.yaml"
       id:
         ♾️: "^🧬://morphism\.identity\.v[0-9]+$"
       🔗: # links
@@ -29,7 +29,7 @@ $evolve:
       📜: # spec
         📝:
           schema:
-            🔒: "example.com/λ/⚛/🆔/📓.yaml"
+            🔒: "🏠://λ/⚛/🆔/📓.yaml"
           purity:
             🔒: "100% (referentially transparent)"
           category_theory:

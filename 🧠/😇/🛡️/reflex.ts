@@ -68,7 +68,7 @@ async function checkM0Beacon(): Promise<CheckResult[]> {
     }
 
     const content = await Deno.readTextFile(entry.path);
-    const projectRelativePath = "example.com/" + relative(projectRoot, entry.path).replaceAll('\\', '/');
+    const projectRelativePath = "🏠://" + relative(projectRoot, entry.path).replaceAll('\\', '/');
 
     if (content.trim() === "") {
       continue;

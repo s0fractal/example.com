@@ -1,5 +1,5 @@
 ---
-$path: "example.com/README2.md"
+$path: "🏠://README2.md"
 ---
 # Σ-Calculus v0.2 — Formal + Live Runtime (Combined)
 

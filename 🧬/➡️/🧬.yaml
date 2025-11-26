@@ -1,0 +1,18 @@
+$schema: "../../📓.yaml"
+
+🆔: "🧬://➡️"
+🏷️: "glyph"
+
+🎯:
+  goal: "To represent the '$ref' keyword in JSON Schema, referencing another schema."
+
+glyph:
+  symbol: "➡️"
+  name: "$ref"
+  description: |
+    The '➡️' glyph corresponds to the JSON Schema '$ref' keyword. It is used
+    to reference another schema or a part of another schema.
+
+spec:
+  type: "string"
+  # This could be more specific with URI patterns.

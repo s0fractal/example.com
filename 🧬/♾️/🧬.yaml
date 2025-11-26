@@ -1,0 +1,17 @@
+$schema: "../../📓.yaml"
+
+🆔: "🧬://♾️"
+🏷️: "glyph"
+
+🎯:
+  goal: "To represent the 'pattern' keyword in JSON Schema, specifying a regular expression for string validation."
+
+glyph:
+  symbol: "♾️"
+  name: "pattern"
+  description: |
+    The '♾️' glyph corresponds to the JSON Schema 'pattern' keyword. It specifies
+    that a string value must match a given regular expression.
+
+spec:
+  type: "string"

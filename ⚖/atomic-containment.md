@@ -1,5 +1,5 @@
 ---
-$path: "example.com/⚖/atomic-containment.md"
+$path: "🏠://⚖/atomic-containment.md"
 ---
 # Principle: Atomic Containment & Non-Redundant Naming
 

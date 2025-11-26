@@ -1,0 +1,25 @@
+$schema: "../../📓.yaml"
+
+🆔: "🧬://🧭"
+🏷️: "glyph"
+
+🎯:
+  goal: "To represent the 'intent' property, defining the purpose, role, and operational context of an atom."
+
+glyph:
+  symbol: "🧭"
+  name: "intent"
+  description: |
+    The '🧭' glyph signifies the 'intent' of an atom. It's a structured object that
+    describes what the atom wants, what it does, under what conditions it operates,
+    what it provides, and what it requires. It serves as the atom's guiding principle.
+
+spec:
+  🗃️: object
+  ✅: [goal, role]
+  📝:
+    goal: { 🗃️: string }
+    role: { 🗃️: string }
+    conditions: { 🗃️: array, 📦: { 🗃️: string } }
+    provides: { 🗃️: array, 📦: { 🗃️: string } }
+    requires: { 🗃️: array, 📦: { 🗃️: string } }

@@ -1,5 +1,5 @@
 ---
-$path: "example.com/⚖/M0-holographic-identity.md"
+$path: "🏠://⚖/M0-holographic-identity.md"
 ---
 # Principle: M0 Beacon (Holographic Identity)
 
@@ -20,16 +20,15 @@ $$Identity = Content \times Context(Path)$$
 
 -   **Для `🧬.yaml` та `📓.yaml`:** Використовується зарезервоване поле `$path`.
     ```yaml
-    # ~/example.com/λ/⚛/🆔/🧬.yaml
-    $path: "example.com/λ/⚛/🆔/🧬.yaml"    id: "🧬://morphism.identity.v1"
-    kind: "morphism"
+    # ~/🏠://λ/⚛/🆔/🧬.yaml
+    $path: "🏠://λ/⚛/🆔/🧬.yaml"    id: "🧬://morphism.identity.v1"    kind: "morphism"
     # ...
     ```
 
 -   **Для Markdown (`.md`):** Використовується Frontmatter.
     ```markdown
     ---
-    $path: example.com/λ/⚛/🆔/README.md
+    $path: 🏠://λ/⚛/🆔/README.md
     ---
     # 🆔 (Identity Morphism)
     ```

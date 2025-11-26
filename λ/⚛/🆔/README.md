@@ -1,5 +1,5 @@
 ---
-$path: "example.com/λ/⚛/🆔/README.md"
+$path: "🏠://λ/⚛/🆔/README.md"
 ---
 # 🆔 (Identity Morphism)
 

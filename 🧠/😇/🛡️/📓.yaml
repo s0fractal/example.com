@@ -1,11 +1,11 @@
 🌟: "https://json-schema.org/draft/2020-12/schema"
-$path: "example.com/🧠/😇/🛡️/📓.yaml"
+$path: "🏠://🧠/😇/🛡️/📓.yaml"
 
 $intent: "Narrows the general 😇 schema for the specific case of the Guardian (🛡️) 😇, whose role is to enforce M0 Beacon."
 
 🤝:
   # 1. Inherit common properties from the parent 😇 schema.
-  - ➡️: "example.com/🧠/😇/📓.yaml"
+  - ➡️: "🏠://🧠/😇/📓.yaml"
 
   # 2. Add specific, narrowing constraints for the Guardian 😇.
   - 🗃️: object
@@ -23,11 +23,11 @@ $intent: "Narrows the general 😇 schema for the specific case of the Guardian 
       spec:
         📝:
           schema:
-            🔒: "example.com/🧠/😇/🛡️/📓.yaml"
+            🔒: "🏠://🧠/😇/🛡️/📓.yaml"
       runtime:
         📝:
           entrypoint:
-            🔒: "example.com/🧠/😇/🛡️/reflex.ts"
+            🔒: "🏠://🧠/😇/🛡️/reflex.ts"
           task_name:
             🔒: "shield:check"
     ✅:

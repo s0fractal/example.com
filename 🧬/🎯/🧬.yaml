@@ -1,0 +1,17 @@
+$schema: "../../📓.yaml"
+
+🆔: "🧬://🎯"
+🏷️: "glyph"
+
+🎯:
+  goal: "To represent the 'goal' sub-property within an atom's intent."
+
+glyph:
+  symbol: "🎯"
+  name: "goal"
+  description: |
+    The '🎯' glyph represents the primary objective or aim of an atom.
+    It is a string found within the '🧭' (intent) property.
+
+spec:
+  🗃️: string

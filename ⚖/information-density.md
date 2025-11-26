@@ -1,5 +1,5 @@
 ---
-$path: "example.com/⚖/information-density.md"
+$path: "🏠://⚖/information-density.md"
 ---
 # Principle: Information Density & Signal-to-Noise Ratio
 

@@ -1,0 +1,27 @@
+$schema: "../../📓.yaml"
+
+🆔: "🧬://📊"
+🏷️: "glyph"
+
+🎯:
+  goal: "To represent the 'enum' keyword in JSON Schema, specifying a list of allowed values for a property."
+
+glyph:
+  symbol: "📊"
+  name: "enum"
+  description: |
+    The '📊' glyph corresponds to the JSON Schema 'enum' keyword. It specifies
+    that the value of a property must be one of the values from the provided array.
+
+spec:
+  type: "array"
+  items:
+    # Enum items can be of any type, so generic JSON value.
+    type:
+      - "string"
+      - "number"
+      - "integer"
+      - "boolean"
+      - "object"
+      - "array"
+      - "null"

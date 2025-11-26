@@ -1,11 +1,11 @@
 🌟: "https://json-schema.org/draft/2020-12/schema"
-$path: "example.com/🧠/😇/🌐/📓.yaml"
+$path: "🏠://🧠/😇/🌐/📓.yaml"
 
 $intent: "Narrows the general 😇 schema for the specific case of the Server (🌐) 😇, whose role is to serve the repo over HTTP."
 
 🤝:
   # 1. Inherit common properties from the parent 😇 schema.
-  - ➡️: "example.com/🧠/😇/📓.yaml"
+  - ➡️: "🏠://🧠/😇/📓.yaml"
 
   # 2. Add specific, narrowing constraints for the Server 😇.
   - 🗃️: object
@@ -23,11 +23,11 @@ $intent: "Narrows the general 😇 schema for the specific case of the Server (�
       spec:
         📝:
           schema:
-            🔒: "example.com/🧠/😇/🌐/📓.yaml"
+            🔒: "🏠://🧠/😇/🌐/📓.yaml"
       runtime:
         📝:
           entrypoint:
-            🔒: "example.com/🧠/😇/🌐/⚙️.ts"
+            🔒: "🏠://🧠/😇/🌐/⚙️.ts"
           task_name:
             🔒: "serve"
     ✅:

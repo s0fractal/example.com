@@ -1,4 +1,4 @@
-$path: "example.com/λ/⚛/🆔/🧬.yaml"
+$path: "🏠://λ/⚛/🆔/🧬.yaml"
 id: "🧬://morphism.identity.v1"
 kind: "morphism"
 
@@ -28,7 +28,7 @@ io:
       type: "a" # Must be the same as the input type
 
 spec:
-  schema: "example.com/λ/⚛/🆔/📓.yaml"
+  schema: "🏠://λ/⚛/🆔/📓.yaml"
   purity: "100% (referentially transparent)"
   category_theory: "Neutral element for function composition"
   types:

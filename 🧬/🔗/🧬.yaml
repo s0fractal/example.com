@@ -1,0 +1,25 @@
+$schema: "../../📓.yaml"
+
+🆔: "🧬://🔗"
+kind: "glyph"
+
+intent:
+  goal: "To define the relationships and connections between atoms."
+
+glyph:
+  symbol: "🔗"
+  name: "links"
+  description: |
+    The '🔗' property contains an array of link objects, each defining a directed
+    relationship from the current atom to another, specified by its 'ref' (ID).
+
+spec:
+  type: "array"
+  items:
+    type: "object"
+    required:
+      - "rel"
+      - "ref"
+    properties:
+      rel: { type: "string", description: "The nature of the relationship (e.g., 'uses', 'part-of')." }
+      ref: { type: "string", description: "The unique ID of the target atom." }

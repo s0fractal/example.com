@@ -1,5 +1,5 @@
 $schema: "./📓.yaml"
-$path: "example.com/🧠/😇/🛡️/🧬.yaml"
+$path: "🏠://🧠/😇/🛡️/🧬.yaml"
 id: "🧬://😇.guardian.v1"
 kind: "😇"
 
@@ -35,11 +35,11 @@ io:
       type: "validation_result"
 
 spec:
-  schema: "example.com/🧠/😇/🛡️/📓.yaml"
+  schema: "🏠://🧠/😇/🛡️/📓.yaml"
   purity: "impure" # Interacts with the filesystem
   constraints:
     - "must have read access to the entire repository"
 
 runtime:
-  entrypoint: "example.com/🧠/😇/🛡️/reflex.ts"
+  entrypoint: "🏠://🧠/😇/🛡️/reflex.ts"
   task_name: "shield:check"

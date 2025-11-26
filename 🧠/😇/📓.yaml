@@ -33,7 +33,7 @@ $evolve:
     📝:
       schema:
         🗃️: string
-        ♾️: "^example.com/🧠/😇/.+\/📓\.yaml$"
+        ♾️: "^🏠://🧠/😇/.+\/📓\.yaml$"
   runtime:
     🗃️: object
     ✅: [entrypoint, task_name]
@@ -41,7 +41,7 @@ $evolve:
       # The main logic file for the angel's reflex.
       entrypoint:
         🗃️: string
-        ♾️: "^example.com/🧠/😇/.+\/reflex\.ts$"
+        ♾️: "^🏠://🧠/😇/.+\/reflex\.ts$"
       # The name of the task in deno.json
       task_name:
         🗃️: string

@@ -1,4 +1,4 @@
-$path: "example.com/🧠/😇/🌐/🧬.yaml"
+$path: "🏠://🧠/😇/🌐/🧬.yaml"
 id: "🧬://😇.server.v1"
 kind: "😇"
 
@@ -32,12 +32,12 @@ io:
       type: "Response"
 
 spec:
-  schema: "example.com/🧠/😇/🌐/📓.yaml"
+  schema: "🏠://🧠/😇/🌐/📓.yaml"
   purity: "impure" # Interacts with the filesystem and network
   constraints:
     - "must have read access to the entire repository"
     - "must have net access to bind to a port"
 
 runtime:
-  entrypoint: "example.com/🧠/😇/🌐/⚙️.ts"
+  entrypoint: "🏠://🧠/😇/🌐/⚙️.ts"
   task_name: "serve"

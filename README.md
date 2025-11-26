@@ -1,5 +1,5 @@
 ---
-$path: "example.com/README.md"
+$path: "🏠://README.md"
 ---
 # λ⁷ ⊸ Σ: Holographic Computational Field with Ontological Embedding
 

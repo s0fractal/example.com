@@ -1,0 +1,19 @@
+$schema: "../../📓.yaml"
+
+🆔: "🧬://🧬"
+kind: "glyph"
+
+intent:
+  goal: "To represent the fundamental, self-contained definition of an atom; its genetic code."
+
+glyph:
+  symbol: "🧬"
+  name: "seed"
+  description: |
+    The '🧬' glyph represents the core definition file for any atom (previously '🧬.yaml').
+    It contains all the necessary information to instantiate, understand, and interact with the atom.
+    The file itself is named '🧬.yaml'.
+
+spec:
+  type: "file"
+  extension: ".yaml"

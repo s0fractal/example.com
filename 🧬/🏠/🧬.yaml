@@ -1,0 +1,20 @@
+$schema: "../../📓.yaml"
+
+🆔: "🧬://🏠"
+🏷️: "glyph"
+
+🎯:
+  goal: "To represent the base URI of the current repository, replacing hardcoded domain names."
+
+glyph:
+  symbol: "🏠"
+  name: "repo_base_uri"
+  description: |
+    The '🏠' glyph signifies the dynamic base URI for the current repository.
+    It replaces hardcoded '🏠://' prefixes in IDs and paths, allowing
+    the system to be self-referential and portable. Its value is derived at
+    runtime (e.g., from git config or environment variables).
+
+spec:
+  🗃️: string
+  ♾️: "^(https?|git|file)://.+" # URI pattern

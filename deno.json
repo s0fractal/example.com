@@ -2,10 +2,10 @@
   "tasks": {
     "🧊": "echo 'Stay frosty'",
     "<0001f9ca>": "echo 'Stay frosty'",
-    "shield:check": "deno run -A example.com/🧠/😇/🛡️/reflex.ts"
+    "shield:check": "deno run -A @/🧠/😇/🛡️/reflex.ts"
   },
   "imports": {
-    "example.com/": "./",
+    "@/": "./",
     "std/": "https://deno.land/std@0.224.0/"
   }
 }

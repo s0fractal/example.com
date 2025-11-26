@@ -1,5 +1,5 @@
 ---
-$path: "example.com/⚖/structural-integrity.md"
+$path: "🏠://⚖/structural-integrity.md"
 ---
 # Principle: Structural Integrity & Layout Specification
 

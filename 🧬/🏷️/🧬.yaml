@@ -1,0 +1,27 @@
+$schema: "../../📓.yaml"
+
+🆔: "🧬://🏷️"
+kind: "glyph"
+
+intent:
+  goal: "To categorize an atom, defining its fundamental type or role."
+
+glyph:
+  symbol: "🏷️"
+  name: "kind"
+  description: |
+    The '🏷️' property specifies the atom's type (e.g., 'repo', 'module', 'glyph').
+    It is a primary classification mechanism for all atoms.
+
+spec:
+  type: "string"
+  enum:
+    - "repo"
+    - "module"
+    - "morphism"
+    - "agent"
+    - "glyph"
+    - "seed"
+    - "intent"
+    - "sim"
+    - "directory"

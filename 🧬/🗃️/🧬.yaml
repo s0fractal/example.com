@@ -1,0 +1,25 @@
+$schema: "../../📓.yaml"
+
+🆔: "🧬://🗃️"
+🏷️: "glyph"
+
+🎯:
+  goal: "To represent the 'type' keyword in JSON Schema, defining the basic data type of a property."
+
+glyph:
+  symbol: "🗃️"
+  name: "type"
+  description: |
+    The '🗃️' glyph corresponds to the JSON Schema 'type' keyword. It specifies
+    the data type of a JSON value (e.g., 'string', 'number', 'object', 'array').
+
+spec:
+  type: "string"
+  enum:
+    - "string"
+    - "number"
+    - "integer"
+    - "boolean"
+    - "object"
+    - "array"
+    - "null"

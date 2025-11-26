@@ -1,7 +1,7 @@
 $schema: "./📓.yaml"
-$path: "example.com/🧠/😇/🛡️/seed.yaml"
-id: "seed://agent.guardian.v1"
-kind: "agent"
+$path: "example.com/🧠/😇/🛡️/🧬.yaml"
+id: "🧬://😇.guardian.v1"
+kind: "😇"
 
 intent:
   goal: "Enforce the M0 Beacon (Holographic Identity) principle across all atoms."
@@ -25,7 +25,7 @@ links:
   - rel: "implements"
     ref: "principle://M0-holographic-identity"
 
-# IO for an agent is less about data transformation and more about triggers and reports.
+# IO for an 😇 is less about data transformation and more about triggers and reports.
 io:
   input:
     - name: "trigger"

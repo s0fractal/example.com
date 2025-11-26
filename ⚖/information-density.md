@@ -18,11 +18,11 @@ $path: "example.com/⚖/information-density.md"
 
 ### 1. YAML over JSON for Seed Files
 
--   **Decision:** We use YAML for all `.seed` files.
+-   **Decision:** We use YAML for all `🧬.yaml` files.
 -   **Reasoning:**
     -   **Density:** YAML's indentation-based structure eliminates the noisy brackets `{}` and commas `,` of JSON.
     -   **Signal/Noise:** The absence of mandatory quotes `"` for keys enhances readability for both humans and LLMs. The data itself becomes the primary signal.
     -   **In-band Documentation:** YAML's support for comments (`#`) allows for metadata and thoughts to co-exist with the data without polluting the parsable structure.
 -   **Implementation:**
     -   See: `deno.json` for the YAML parsing dependency.
-    -   See: `repo.seed.yaml` for an example instance.
+    -   See: `repo.🧬.yaml` for an example instance.

@@ -201,7 +201,7 @@ calculus deterministically.
 3. Execute `transform` to produce output instances.
 4. Validate constraints.
 5. Persist Derivation record (immutable).
-6. Optionally run Monitor rules (spawn agents, update karma/fuel).
+6. Optionally run Monitor rules (spawn 😇s, update karma/fuel).
 
 The runtime uses a small persistent store (LevelDB/IndexedDB/Git objects) to
 save instances and derivations.
@@ -281,7 +281,7 @@ metrics:
 - fuel_balance over epoch
 - entropy of signature distribution
 
-Example experiments: repeated errors → spawn Angel rule when count > threshold;
+Example experiments: repeated errors → spawn 😇 rule when count > threshold;
 density folding rule: if files in dir > N, create Folder-Branch rule.
 
 ---

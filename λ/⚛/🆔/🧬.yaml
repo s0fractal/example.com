@@ -1,5 +1,5 @@
-$path: "example.com/λ/⚛/🆔/seed.yaml"
-id: "seed://morphism.identity.v1"
+$path: "example.com/λ/⚛/🆔/🧬.yaml"
+id: "🧬://morphism.identity.v1"
 kind: "morphism"
 
 intent:
@@ -42,7 +42,7 @@ spec:
   layout: # New layout property for the identity atom
     strict: true
     files:
-      - "seed.yaml"
+      - "🧬.yaml"
       - "📓.yaml"
       - "README.md"
       - "proof.yaml" # Proof metadata

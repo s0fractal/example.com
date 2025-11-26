@@ -15,7 +15,7 @@ glyph:
   name: "identity"
   description: |
     The '🆔' property holds the unique and stable identifier for an atom,
-    formatted as a URI (e.g., 'seed://...'). It is the atom's soul,
+    formatted as a URI (e.g., '🧬://...'). It is the atom's soul,
     independent of its location in any filesystem.
 
 # Specification for the VALUE that this glyph-property holds

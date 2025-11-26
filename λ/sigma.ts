@@ -1,12 +1,12 @@
 /**
  * @file sigma.ts
- * @description The formal type definitions for Σ-Seed v1.
+ * @description The formal type definitions for Σ-🧬 v1.
  * These types define the "DNA" of the living code organism.
  */
 
-export interface SigmaSeed {
-  id: string; // seed://...
-  kind: SigmaKind; // agent|morphism|module|...
+export interface Sigma🧬 {
+  id: string; // 🧬://...
+  kind: SigmaKind; // 😇|morphism|module|...
   intent: SigmaIntent;
   state: SigmaState;
   links: SigmaLink[];
@@ -15,14 +15,14 @@ export interface SigmaSeed {
 }
 
 export type SigmaKind =
-  | "agent"
+  | "😇"
   | "morphism"
   | "module"
   | "directory"
   | "repo"
   | "glyph"
   | "pattern"
-  | "seed"
+  | "🧬"
   | "intent"
   | "sim";
 
@@ -44,7 +44,7 @@ export interface SigmaState {
 
 export interface SigmaLink {
   rel: string;
-  ref: string; // seed://...
+  ref: string; // 🧬://...
 }
 
 export interface SigmaIO {

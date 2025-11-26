@@ -9,7 +9,7 @@ $path: "example.com/⚖/structural-integrity.md"
 
 ## The Rule
 
-A `seed.yaml` file for an atom that is also a directory (e.g., `kind: repo`, `kind: morphism`, `kind: agent`) can contain an optional `layout` property within its `spec` block.
+A `🧬.yaml` file for an atom that is also a directory (e.g., `kind: repo`, `kind: morphism`, `kind: 😇`) can contain an optional `layout` property within its `spec` block.
 
 This `layout` object defines the expected file and directory structure within the atom's containing folder.
 
@@ -21,7 +21,7 @@ spec:
   layout:
     # An array of glob patterns for allowed files.
     files:
-      - "seed.yaml"
+      - "🧬.yaml"
       - "📓.yaml"
       - "README.md"
       - "*.ts" # Allows for any TypeScript files
@@ -36,13 +36,13 @@ spec:
     strict: true
 ```
 
-## Enforcement (The Topology Angel)
+## Enforcement (The Topology 😇)
 
-This principle is to be enforced by a dedicated agent, the **"Topology Guardian"** (or a similar name).
+This principle is to be enforced by a dedicated 😇, the **"Topology Guardian"** (or a similar name).
 
 **Algorithm:**
 
-1.  The angel finds all `seed.yaml` files in the repository.
+1. The 😇 finds all `🧬.yaml` files in the repository.
 2.  For each seed that has a `spec.layout` property, it performs a check on its containing directory.
 3.  It lists the actual files and sub-directories.
 4.  It compares the actual contents against the `files` and `dirs` glob patterns.

@@ -1,6 +1,6 @@
 /**
  * @file reflex.ts
- * @description The core logic (reflex) for the Guardian (🛡️) angel.
+ * @description The core logic (reflex) for the Guardian (🛡️) 😇.
  * This script enforces the M0 Beacon (Holographic Identity) principle.
  */
 
@@ -53,7 +53,7 @@ function getEmbeddedPath(content: string): string | null {
 
 async function checkM0Beacon(): Promise<CheckResult[]> {
   const results: CheckResult[] = [];
-  const globPattern = "**/*.{seed.yaml,📓.yaml,md}";
+  const globPattern = "**/*.{🧬.yaml,📓.yaml,md}";
   const projectRoot = Deno.cwd();
 
   const globOptions = {
@@ -103,7 +103,7 @@ async function checkM0Beacon(): Promise<CheckResult[]> {
 }
 
 if (import.meta.main) {
-  console.log("🛡️  Guardian Angel: Checking M0 Beacon compliance...");
+  console.log("🛡️  Guardian 😇: Checking M0 Beacon compliance...");
 
   checkM0Beacon().then((results) => {
     const errors = results.filter((r) => r.status === "error");

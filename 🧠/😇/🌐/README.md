@@ -1,7 +1,7 @@
 ---
 $path: "example.com/🧠/😇/🌐/README.md"
 ---
-# 🌐 Server Angel
+# 🌐 Server 😇
 
 > This file is auto-generated.
 >

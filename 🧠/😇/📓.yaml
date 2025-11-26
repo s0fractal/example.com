@@ -1,9 +1,9 @@
 # Standard JSON Schema declaration.
 $schema: "https://json-schema.org/draft/2020-12/schema"
 
-# Custom Kairos/Sigma metadata for the general Angel schema.
+# Custom Kairos/Sigma metadata for the general 😇 schema.
 $intent: >
-  This is the parent schema for all Angel atoms. Angels are autonomous agents
+  This is the parent schema for all 😇 atoms. 😇s are autonomous 😇s
   that perform tasks and enforce rules within the system.
 
 $morph:
@@ -11,16 +11,16 @@ $morph:
   density_threshold: 5
 
 $evolve:
-  on_error: "spawn:angel(context:angel_schema_error)"
+  on_error: "spawn:😇(context:😇_schema_error)"
   on_density: "fold"
 
-# The JSON Schema definition for any Angel Seed.
+# The JSON Schema definition for any 😇 🧬.
 type: object
 required: [kind, intent, spec, runtime]
 properties:
   kind:
     type: string
-    const: "agent" # Angels are a type of agent
+    const: "😇" # 😇s are a type of 😇
   intent:
     type: object
     required: [goal, role, conditions]
@@ -34,7 +34,7 @@ properties:
     properties:
       schema:
         type: string
-        pattern: "^example.com/🧠/😇/.+\/schema\.yaml$"
+        pattern: "^example.com/🧠/😇/.+\/📓\.yaml$"
   runtime:
     type: object
     required: [entrypoint, task_name]

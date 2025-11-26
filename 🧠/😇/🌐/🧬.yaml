@@ -1,6 +1,6 @@
-$path: "example.com/🧠/😇/🌐/seed.yaml"
-id: "seed://agent.server.v1"
-kind: "agent"
+$path: "example.com/🧠/😇/🌐/🧬.yaml"
+id: "🧬://😇.server.v1"
+kind: "😇"
 
 intent:
   goal: "To serve the project repository over HTTP at example.com"
@@ -22,7 +22,7 @@ links:
   - rel: "governs"
     ref: "principle://information-density" # The server should ideally render things according to this
 
-# IO for an agent is less about data transformation and more about triggers and reports.
+# IO for an 😇 is less about data transformation and more about triggers and reports.
 io:
   input:
     - name: "http_request"

@@ -13,7 +13,7 @@ $morph:
   density_threshold: 3
 
 $evolve:
-  on_error: "spawn:angel(context:morphism_schema_error)"
+  on_error: "spawn:😇(context:morphism_schema_error)"
   on_density: "fold"
 
 # The JSON Schema definition for any Morphism Seed.
@@ -23,7 +23,7 @@ required: [kind, intent, io, spec, "$path"]
 properties:
   "$path":
     type: string
-    pattern: "^example.com/λ/⚛/.+\/seed\.yaml$" # Updated pattern for generic seed.yaml
+    pattern: "^example.com/λ/⚛/.+\/🧬\.yaml$" # Updated pattern for generic seed.yaml
   kind:
     type: string
     const: "morphism"

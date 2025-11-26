@@ -2,17 +2,17 @@
 $schema: "https://json-schema.org/draft/2020-12/schema"
 $path: "example.com/🧠/😇/🛡️/📓.yaml"
 
-$intent: "Narrows the general Angel schema for the specific case of the Guardian (🛡️) angel, whose role is to enforce M0 Beacon."
+$intent: "Narrows the general 😇 schema for the specific case of the Guardian (🛡️) 😇, whose role is to enforce M0 Beacon."
 
 allOf:
-  # 1. Inherit common properties from the parent Angel schema.
+  # 1. Inherit common properties from the parent 😇 schema.
   - $ref: "example.com/🧠/😇/📓.yaml"
 
-  # 2. Add specific, narrowing constraints for the Guardian angel.
+  # 2. Add specific, narrowing constraints for the Guardian 😇.
   - type: object
     properties:
       id:
-        const: "seed://agent.guardian.v1"
+        const: "🧬://😇.guardian.v1"
       intent:
         properties:
           goal:

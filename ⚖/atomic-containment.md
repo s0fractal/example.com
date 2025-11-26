@@ -14,7 +14,7 @@ If a directory represents a conceptual atom and is named with a unique identifie
 **INCORRECT (Redundant):**
 ```
 /🆔
-  ├─ 🆔.seed.yaml
+  ├─ 🆔.🧬.yaml
   └─ 🆔.📓.yaml
 ```
 *Reasoning: The `🆔` prefix is noise. We already know we are inside the `🆔` atom.*
@@ -22,16 +22,16 @@ If a directory represents a conceptual atom and is named with a unique identifie
 **CORRECT (Dense & Functional):**
 ```
 /🆔
-  ├─ seed.yaml
+  ├─ 🧬.yaml
   ├─ 📓.yaml
   └─ README.md
 ```
-*Reasoning: The folder `🆔` provides the context. The files `seed.yaml`, `📓.yaml`, and `README.md` clearly describe their function within that context.*
+*Reasoning: The folder `🆔` provides the context. The files `🧬.yaml`, `📓.yaml`, and `README.md` clearly describe their function within that context.*
 
 ## Implications
 
 1.  **Clarity:** The role of each file is immediately obvious from its name.
-2.  **Scalability:** This pattern is fractal and can be repeated for any atom (`agent`, `morphism`, `repo`) without modification.
+2.  **Scalability:** This pattern is fractal and can be repeated for any atom (`😇`, `morphism`, `repo`) without modification.
 3.  **Reduced Noise:** It eliminates redundant prefixes, making paths cleaner and easier to read for both humans and LLMs.
 
 ---
@@ -42,7 +42,7 @@ If a directory represents a conceptual atom and is named with a unique identifie
 
 -   **Decision:** The initial file structure for the `identity` morphism will be refactored to follow this principle.
 -   **Refactoring Steps:**
-    -   `.../🆔/🆔.seed.yaml` → `.../🆔/seed.yaml`
+    -   `.../🆔/🆔.🧬.yaml` → `.../🆔/🧬.yaml`
     -   `.../🆔/🆔.📓.yaml` → `.../🆔/📓.yaml`
     -   `.../🆔/🆔.md` → `.../🆔/README.md`
 -   **Implementation:**

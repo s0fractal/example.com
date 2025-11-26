@@ -1,23 +1,23 @@
 
 import { parse } from "std/yaml/mod.ts";
-import { SigmaSeed } from "./sigma.ts";
+import { Sigma🧬 } from "./sigma.ts";
 
-const seedContent = await Deno.readTextFile("🧬.yaml");
-const seed = parse(seedContent) as { seed: SigmaSeed };
+const atomContent = await Deno.readTextFile("🧬.yaml");
+const atom = parse(atomContent) as { 🧬: Sigma🧬 };
 
-console.log("🔍 Validating Σ-Seed...");
+console.log("🔍 Validating Σ-🧬...");
 
-if (!seed.seed) {
-  console.error("❌ Error: Root 'seed' key missing.");
+if (!atom.🧬) {
+  console.error("❌ Error: Root '🧬' key missing.");
   Deno.exit(1);
 }
 
-const s = seed.seed;
+const s = atom.🧬;
 
 // Basic structural checks
 const checks = [
-  { name: "ID format", valid: s.id.startsWith("seed://") },
-  { name: "Kind", valid: ["repo", "agent", "module"].includes(s.kind) },
+  { name: "ID format", valid: s.id.startsWith("🧬://") },
+  { name: "Kind", valid: ["repo", "😇", "module"].includes(s.kind) },
   { name: "Intent", valid: !!s.intent.goal && !!s.intent.role },
   { name: "State", valid: typeof s.state.energy === "number" },
 ];
@@ -37,4 +37,4 @@ if (failed) {
   Deno.exit(1);
 }
 
-console.log("✨ Σ-Seed is valid and resonant.");
+console.log("✨ Σ-🧬 is valid and resonant.");

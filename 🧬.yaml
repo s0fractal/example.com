@@ -1,9 +1,9 @@
 $schema: "./📓.yaml"
-$path: "example.com/seed.yaml"
+$path: "example.com/🧬.yaml"
 
 # --- Main Atom Definition using Glyphs ---
 
-🆔: "seed://example.com.v1"
+🆔: "🧬://example.com.v1"
 🏷️: "repo"
 🎯:
   goal: "To contain and evolve a self-describing digital organism."

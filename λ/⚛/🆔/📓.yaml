@@ -17,9 +17,9 @@ allOf:
     properties:
       # Enforce the M0 Beacon principle for the seed file itself.
       "$path":
-        const: "example.com/λ/⚛/🆔/seed.yaml"
+        const: "example.com/λ/⚛/🆔/🧬.yaml"
       id:
-        pattern: "^seed://morphism\.identity\.v[0-9]+$"
+        pattern: "^🧬://morphism\.identity\.v[0-9]+$"
       links:
         # Identity has no dependencies, so the array must be empty.
         maxItems: 0
@@ -43,7 +43,7 @@ allOf:
                 type: array
                 items: { type: string }
                 const:
-                  - "seed.yaml"
+                  - "🧬.yaml"
                   - "📓.yaml"
                   - "README.md"
                   - "proof.yaml"

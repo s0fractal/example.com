@@ -1,6 +1,6 @@
 /**
  * @file ⚙️.ts
- * @description The core logic (reflex) for the Server (🌐) angel.
+ * @description The core logic (reflex) for the Server (🌐) 😇.
  * This script serves the project repository over HTTPS.
  */
 
@@ -20,7 +20,7 @@ const { domain: HOSTNAME, port: PORT } = seed.seed.spec.vars!;
 const keyFile = join(REPO_ROOT, "🧠/certs/example.com.key");
 const certFile = join(REPO_ROOT, "🧠/certs/example.com.crt");
 
-console.log(`🌐 Server Angel: Preparing to serve repository over HTTPS...`);
+console.log(`🌐 Server 😇: Preparing to serve repository over HTTPS...`);
 console.log(`   Root: ${REPO_ROOT}`);
 console.log(`   URL: https://${HOSTNAME}:${PORT}`);
 console.log(`   Key file: ${keyFile}`);

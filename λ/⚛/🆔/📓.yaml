@@ -24,8 +24,8 @@ $evolve:
         ⬆️📦: 0
       🔌: # io
         📝:
-          input: { ⬆️📦: 1, minItems: 1 }
-          output: { ⬆️📦: 1, minItems: 1 }
+          input: { ⬆️📦: 1, ⬇️📦: 1 }
+          output: { ⬆️📦: 1, ⬇️📦: 1 }
       📜: # spec
         📝:
           📓: # Changed from schema

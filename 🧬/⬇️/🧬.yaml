@@ -1,0 +1,17 @@
+$schema: "../📓.yaml"
+
+🆔: "🧬://⬇️"
+🏷️: "glyph"
+
+🧭:
+  🎯: "To represent the 'min' concept, often used with numeric constraints (e.g., minimum value, minimum items)."
+
+glyph:
+  symbol: "⬇️"
+  name: "min"
+  description: |
+    The '⬇️' glyph signifies a minimum limit. In JSON Schema, it can be combined
+    with other glyphs to denote constraints like ⬇️📦, minLength, minValue.
+
+spec:
+  🗃️: integer

@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://❤️"
 kind: "glyph"
 
-intent:
-  goal: "To represent the dynamic, runtime state and vital metrics of an atom."
+🧭:
+  🎯: "To represent the dynamic, runtime state and vital metrics of an atom."
 
 glyph:
   symbol: "❤️"

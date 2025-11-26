@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://✅"
 🏷️: "glyph"
 
-🎯:
-  goal: "To represent the 'required' keyword in JSON Schema, listing properties that must be present."
+🧭:
+  🎯: "To represent the 'required' keyword in JSON Schema, listing properties that must be present."
 
 glyph:
   symbol: "✅"

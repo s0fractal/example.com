@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://🌟"
 🏷️: "glyph"
 
-🎯:
-  goal: "To represent the '$schema' keyword in JSON Schema, declaring which version of JSON Schema the schema is written against."
+🧭:
+  🎯: "To represent the '$schema' keyword in JSON Schema, declaring which version of JSON Schema the schema is written against."
 
 glyph:
   symbol: "🌟"

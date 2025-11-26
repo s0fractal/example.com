@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://📊"
 🏷️: "glyph"
 
-🎯:
-  goal: "To represent the 'enum' keyword in JSON Schema, specifying a list of allowed values for a property."
+🧭:
+  🎯: "To represent the 'enum' keyword in JSON Schema, specifying a list of allowed values for a property."
 
 glyph:
   symbol: "📊"

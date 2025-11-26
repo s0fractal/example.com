@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://🏷️"
 kind: "glyph"
 
-intent:
-  goal: "To categorize an atom, defining its fundamental type or role."
+🧭:
+  🎯: "To categorize an atom, defining its fundamental type or role."
 
 glyph:
   symbol: "🏷️"

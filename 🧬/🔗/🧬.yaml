@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://🔗"
 kind: "glyph"
 
-intent:
-  goal: "To define the relationships and connections between atoms."
+🧭:
+  🎯: "To define the relationships and connections between atoms."
 
 glyph:
   symbol: "🔗"

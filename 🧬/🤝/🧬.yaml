@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://🤝"
 🏷️: "glyph"
 
-🎯:
-  goal: "To represent the 'allOf' keyword in JSON Schema, specifying that an instance must validate against all given subschemas."
+🧭:
+  🎯: "To represent the 'allOf' keyword in JSON Schema, specifying that an instance must validate against all given subschemas."
 
 glyph:
   symbol: "🤝"

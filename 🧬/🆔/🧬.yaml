@@ -6,8 +6,8 @@ $schema: "../../📓.yaml" # We need a schema for glyphs, for now we can point t
 🆔: "🧬://🆔"
 kind: "glyph"
 
-intent:
-  goal: "To represent the unique, immutable identity of any atom in the system."
+🧭:
+  🎯: "To represent the unique, immutable identity of any atom in the system."
 
 # Glyph-specific properties
 glyph:

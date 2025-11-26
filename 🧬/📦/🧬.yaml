@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://📦"
 🏷️: "glyph"
 
-🎯:
-  goal: "To represent the 'items' keyword in JSON Schema, defining the schema for array elements."
+🧭:
+  🎯: "To represent the 'items' keyword in JSON Schema, defining the schema for array elements."
 
 glyph:
   symbol: "📦"

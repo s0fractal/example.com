@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://📝"
 🏷️: "glyph"
 
-🎯:
-  goal: "To represent the 'properties' keyword in JSON Schema, defining the structure of an object's properties."
+🧭:
+  🎯: "To represent the 'properties' keyword in JSON Schema, defining the structure of an object's properties."
 
 glyph:
   symbol: "📝"

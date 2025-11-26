@@ -4,7 +4,7 @@ $schema: "../../📓.yaml"
 🏷️: "glyph"
 
 🎯:
-  goal: "To represent the base URI of the current repository, replacing hardcoded domain names."
+  🎯: "To represent the base URI of the current repository, replacing hardcoded domain names."
 
 glyph:
   symbol: "🏠"

@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://🔌"
 kind: "glyph"
 
-intent:
-  goal: "To define the input and output signatures of an atom."
+🧭:
+  🎯: "To define the input and output signatures of an atom."
 
 glyph:
   symbol: "🔌"

@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://🧬"
 kind: "glyph"
 
-intent:
-  goal: "To represent the fundamental, self-contained definition of an atom; its genetic code."
+🧭:
+  🎯: "To represent the fundamental, self-contained definition of an atom; its genetic code."
 
 glyph:
   symbol: "🧬"

@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://🗃️"
 🏷️: "glyph"
 
-🎯:
-  goal: "To represent the 'type' keyword in JSON Schema, defining the basic data type of a property."
+🧭:
+  🎯: "To represent the 'type' keyword in JSON Schema, defining the basic data type of a property."
 
 glyph:
   symbol: "🗃️"

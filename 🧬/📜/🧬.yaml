@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://📜"
 kind: "glyph"
 
-intent:
-  goal: "To provide a formal, machine-readable specification for an atom."
+🧭:
+  🎯: "To provide a formal, machine-readable specification for an atom."
 
 glyph:
   symbol: "📜"

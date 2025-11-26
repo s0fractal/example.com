@@ -3,8 +3,8 @@ $schema: "../../📓.yaml"
 🆔: "🧬://➡️"
 🏷️: "glyph"
 
-🎯:
-  goal: "To represent the '$ref' keyword in JSON Schema, referencing another schema."
+🧭:
+  🎯: "To represent the '$ref' keyword in JSON Schema, referencing another schema."
 
 glyph:
   symbol: "➡️"

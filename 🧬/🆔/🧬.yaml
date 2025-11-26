@@ -1,7 +1,7 @@
 # This seed defines the '🆔' glyph itself.
 # It's a meta-atom in our system's language.
 
-$schema: "../../📓.yaml" # We need a schema for glyphs, for now we can point to the root one.
+$schema: "🏠://🧬/📓.yaml" # We need a schema for glyphs, for now we can point to the root one.
 
 🆔: "🧬://🆔"
 kind: "glyph"

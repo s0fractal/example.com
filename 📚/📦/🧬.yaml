@@ -1,0 +1,17 @@
+$schema: "../../📓.yaml"
+
+🆔: "glyph://json-schema.items"
+🏷️: "glyph"
+
+🎯:
+  goal: "To represent the 'items' keyword in JSON Schema, defining the schema for array elements."
+
+glyph:
+  symbol: "📦"
+  name: "items"
+  description: |
+    The '📦' glyph corresponds to the JSON Schema 'items' keyword. It specifies
+    the schema that all elements in an array must conform to.
+
+spec:
+  type: "object" # Or a schema object, which is an object.

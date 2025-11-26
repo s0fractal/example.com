@@ -1,5 +1,4 @@
-# Standard JSON Schema declaration.
-$schema: "https://json-schema.org/draft/2020-12/schema"
+🌟: "https://json-schema.org/draft/2020-12/schema"
 # The schema itself must know where it lives.
 $path: "example.com/λ/⚛/🆔/📓.yaml"
 
@@ -8,54 +7,54 @@ $intent: "Narrows the general Morphism schema for the specific case of Identity 
 $evolve:
   on_error: "system:panic" # An error in Identity is a critical failure.
 
-allOf:
+🤝:
   # 1. Inherit all common properties from the parent morphism schema.
-  - $ref: "example.com/λ/📓.yaml"
+  - ➡️: "example.com/λ/📓.yaml"
 
   # 2. Add specific, narrowing constraints for the Identity morphism.
-  - type: object
-    properties:
-      # Enforce the M0 Beacon principle for the seed file itself.
+  - 🗃️: object
+    📝:
+      # Enforce the M0 Beacon principle for the 🧬 file itself.
       "$path":
-        const: "example.com/λ/⚛/🆔/🧬.yaml"
+        🔒: "example.com/λ/⚛/🆔/🧬.yaml"
       id:
-        pattern: "^🧬://morphism\.identity\.v[0-9]+$"
-      links:
+        ♾️: "^🧬://morphism\.identity\.v[0-9]+$"
+      🔗: # links
         # Identity has no dependencies, so the array must be empty.
         maxItems: 0
-      io:
-        properties:
+      🔌: # io
+        📝:
           input: { maxItems: 1, minItems: 1 }
           output: { maxItems: 1, minItems: 1 }
-      spec:
-        properties:
+      📜: # spec
+        📝:
           schema:
-            const: "example.com/λ/⚛/🆔/📓.yaml"
+            🔒: "example.com/λ/⚛/🆔/📓.yaml"
           purity:
-            const: "100% (referentially transparent)"
+            🔒: "100% (referentially transparent)"
           category_theory:
-            const: "Neutral element for function composition"
+            🔒: "Neutral element for function composition"
           layout:
-            type: object
-            properties:
-              strict: { type: boolean, const: true }
+            🗃️: object
+            📝:
+              strict: { 🗃️: boolean, 🔒: true }
               files:
-                type: array
-                items: { type: string }
-                const:
+                🗃️: array
+                📦: { 🗃️: string }
+                🔒:
                   - "🧬.yaml"
                   - "📓.yaml"
                   - "README.md"
                   - "proof.yaml"
               dirs:
-                type: array
-                items: { type: string }
+                🗃️: array
+                📦: { 🗃️: string }
                 maxItems: 0
-        required:
+        ✅:
           - schema
           - purity
           - category_theory
           - layout
-    required:
+    ✅:
       - id
       - "$path"

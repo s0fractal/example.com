@@ -1,6 +1,5 @@
-# Standard JSON Sc
+🌟: "http://json-schema.org/draft-07/schema#"
 $path: "example.com/λ/📓.yaml"
-$schema: "http://json-schema.org/draft-07/schema#"
 $id: "example.com/λ/📓.yaml"
 # Custom Kairos/Sigma metadata for the general Morphism schema.
 $intent: >
@@ -16,66 +15,66 @@ $evolve:
   on_error: "spawn:😇(context:morphism_schema_error)"
   on_density: "fold"
 
-# The JSON Schema definition for any Morphism Seed.
+# The JSON Schema definition for any Morphism 🧬.
 # It assumes it will be extended by a more general root schema defining 'id'.
-type: object
-required: [kind, intent, io, spec, "$path"]
-properties:
+🗃️: object
+✅: [kind, intent, io, spec, "$path"]
+📝:
   "$path":
-    type: string
-    pattern: "^example.com/λ/⚛/.+\/🧬\.yaml$" # Updated pattern for generic seed.yaml
+    🗃️: string
+    ♾️: "^example.com/λ/⚛/.+\/🧬\.yaml$"
   kind:
-    type: string
-    const: "morphism"
+    🗃️: string
+    🔒: "morphism"
   intent:
-    type: object
-    required: [goal, role]
-    properties:
-      goal: { type: string }
-      role: { type: string }
+    🗃️: object
+    ✅: [goal, role]
+    📝:
+      goal: { 🗃️: string }
+      role: { 🗃️: string }
   io:
-    type: object
-    required: [input, output]
-    properties:
+    🗃️: object
+    ✅: [input, output]
+    📝:
       input:
-        type: array
-        items:
-          type: object
-          required: [name, type]
-          properties:
-            name: { type: string }
-            type: { type: string }
+        🗃️: array
+        📦:
+          🗃️: object
+          ✅: [name, 🗃️]
+          📝:
+            name: { 🗃️: string }
+            🗃️: { 🗃️: string }
       output:
-        type: array
-        items:
-          type: object
-          required: [name, type]
-          properties:
-            name: { type: string }
-            type: { type: string }
+        🗃️: array
+        📦:
+          🗃️: object
+          ✅: [name, 🗃️]
+          📝:
+            name: { 🗃️: string }
+            🗃️: { 🗃️: string }
   spec:
-    type: object
-    required: [schema, purity, layout] # layout is now required in spec
-    properties:
+    🗃️: object
+    ✅: [schema, purity, layout] # layout is now required in spec
+    📝:
       schema:
-        type: string
-        pattern: "^example.com/λ/⚛/.+\/📓\.yaml$" # Updated pattern for generic schema.yaml
+        🗃️: string
+        ♾️: "^example.com/λ/⚛/.+\/📓\.yaml$"
       purity:
-        type: string
-        enum: [
+        🗃️: string
+        📊: [
           "100% (referentially transparent)",
           "99% (pure with exceptions)",
           "impure",
         ]
       category_theory:
-        type: string
+        🗃️: string
       layout: # Layout is now defined here.
-        type: object
-        properties:
+        🗃️: object
+        📝:
           files:
-            type: array
-            items: { type: string }
+            🗃️: array
+            📦: { 🗃️: string }
           dirs:
-            type: array
-            items: { type: string }
-          strict: { type: boolean }
+            🗃️: array
+            📦: { 🗃️: string }
+          strict: { 🗃️: boolean }

@@ -1,42 +1,42 @@
 # Standard JSON Schema declaration.
-$schema: "https://json-schema.org/draft/2020-12/schema"
+🌟: "https://json-schema.org/draft/2020-12/schema"
 $path: "example.com/📓.yaml"
 
 $intent: >
   Defines the structure for the root 'repo' atom using glyphs. This is the schema
-  for the seed that represents the entire repository itself.
+  for the 🧬 that represents the entire repository itself.
 
-type: object
-required: ['$path', '🆔', '🏷️', '🎯', '❤️', '📜']
-properties:
+🗃️: object
+✅: ['$path', '🆔', '🏷️', '🎯', '❤️', '📜']
+📝:
   '$path':
-    const: "example.com/🧬.yaml"
+    🔒: "example.com/🧬.yaml"
   '🆔':
-    type: string
-    pattern: "^🧬://.+"
+    🗃️: string
+    ♾️: "^🧬://.+"
   '🏷️':
-    type: string
-    enum:
+    🗃️: string
+    📊:
       - "repo"
   '🎯':
-    type: object
-    properties:
-      goal: { type: "string" }
-      role: { type: "string" }
+    🗃️: object
+    📝:
+      goal: { 🗃️: "string" }
+      role: { 🗃️: "string" }
   '❤️':
-    type: object
+    🗃️: object
   '🔗':
-    type: array
+    🗃️: array
   '🔌':
-    type: object
+    🗃️: object
   '📜':
-    type: object
-    properties:
+    🗃️: object
+    📝:
       schema:
-        type: string
+        🗃️: string
       layout:
-        type: object
-        properties:
-          strict: { type: "boolean" }
-          files: { type: "array", items: { type: "string" } }
-          dirs: { type: "array", items: { type: "string" } }
+        🗃️: object
+        📝:
+          strict: { 🗃️: "boolean" }
+          files: { 🗃️: "array", 📦: { 🗃️: "string" } }
+          dirs: { 🗃️: "array", 📦: { 🗃️: "string" } }

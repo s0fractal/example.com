@@ -1,35 +1,34 @@
-# Standard JSON Schema declaration.
-$schema: "https://json-schema.org/draft/2020-12/schema"
+🌟: "https://json-schema.org/draft/2020-12/schema"
 $path: "example.com/🧠/😇/🛡️/📓.yaml"
 
 $intent: "Narrows the general 😇 schema for the specific case of the Guardian (🛡️) 😇, whose role is to enforce M0 Beacon."
 
-allOf:
+🤝:
   # 1. Inherit common properties from the parent 😇 schema.
-  - $ref: "example.com/🧠/😇/📓.yaml"
+  - ➡️: "example.com/🧠/😇/📓.yaml"
 
   # 2. Add specific, narrowing constraints for the Guardian 😇.
-  - type: object
-    properties:
+  - 🗃️: object
+    📝:
       id:
-        const: "🧬://😇.guardian.v1"
+        🔒: "🧬://😇.guardian.v1"
       intent:
-        properties:
+        📝:
           goal:
-            const: "Enforce the M0 Beacon (Holographic Identity) principle across all atoms."
+            🔒: "Enforce the M0 Beacon (Holographic Identity) principle across all atoms."
           role:
-            const: "Guardian of structural integrity."
+            🔒: "Guardian of structural integrity."
           conditions:
-            const: ["on:commit", "on:demand"]
+            🔒: ["on:commit", "on:demand"]
       spec:
-        properties:
+        📝:
           schema:
-            const: "example.com/🧠/😇/🛡️/📓.yaml"
+            🔒: "example.com/🧠/😇/🛡️/📓.yaml"
       runtime:
-        properties:
+        📝:
           entrypoint:
-            const: "example.com/🧠/😇/🛡️/reflex.ts"
+            🔒: "example.com/🧠/😇/🛡️/reflex.ts"
           task_name:
-            const: "shield:check"
-    required:
+            🔒: "shield:check"
+    ✅:
       - id

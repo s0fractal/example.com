@@ -1,5 +1,4 @@
-# Standard JSON Schema declaration.
-$schema: "https://json-schema.org/draft/2020-12/schema"
+🌟: "https://json-schema.org/draft/2020-12/schema"
 
 # Custom Kairos/Sigma metadata for the general 😇 schema.
 $intent: >
@@ -15,34 +14,34 @@ $evolve:
   on_density: "fold"
 
 # The JSON Schema definition for any 😇 🧬.
-type: object
-required: [kind, intent, spec, runtime]
-properties:
+🗃️: object
+✅: [kind, intent, spec, runtime]
+📝:
   kind:
-    type: string
-    const: "😇" # 😇s are a type of 😇
+    🗃️: string
+    🔒: "😇" # 😇s are a type of 😇
   intent:
-    type: object
-    required: [goal, role, conditions]
-    properties:
-      goal: { type: string }
-      role: { type: string }
-      conditions: { type: array, items: { type: string } }
+    🗃️: object
+    ✅: [goal, role, conditions]
+    📝:
+      goal: { 🗃️: string }
+      role: { 🗃️: string }
+      conditions: { 🗃️: array, 📦: { 🗃️: string } }
   spec:
-    type: object
-    required: [schema]
-    properties:
+    🗃️: object
+    ✅: [schema]
+    📝:
       schema:
-        type: string
-        pattern: "^example.com/🧠/😇/.+\/📓\.yaml$"
+        🗃️: string
+        ♾️: "^example.com/🧠/😇/.+\/📓\.yaml$"
   runtime:
-    type: object
-    required: [entrypoint, task_name]
-    properties:
+    🗃️: object
+    ✅: [entrypoint, task_name]
+    📝:
       # The main logic file for the angel's reflex.
       entrypoint:
-        type: string
-        pattern: "^example.com/🧠/😇/.+\/reflex\.ts$"
+        🗃️: string
+        ♾️: "^example.com/🧠/😇/.+\/reflex\.ts$"
       # The name of the task in deno.json
       task_name:
-        type: string
+        🗃️: string

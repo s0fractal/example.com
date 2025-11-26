@@ -1,35 +1,34 @@
-# Standard JSON Schema declaration.
-$schema: "https://json-schema.org/draft/2020-12/schema"
+🌟: "https://json-schema.org/draft/2020-12/schema"
 $path: "example.com/🧠/😇/🌐/📓.yaml"
 
 $intent: "Narrows the general 😇 schema for the specific case of the Server (🌐) 😇, whose role is to serve the repo over HTTP."
 
-allOf:
+🤝:
   # 1. Inherit common properties from the parent 😇 schema.
-  - $ref: "example.com/🧠/😇/📓.yaml"
+  - ➡️: "example.com/🧠/😇/📓.yaml"
 
   # 2. Add specific, narrowing constraints for the Server 😇.
-  - type: object
-    properties:
+  - 🗃️: object
+    📝:
       id:
-        const: "🧬://😇.server.v1"
+        🔒: "🧬://😇.server.v1"
       intent:
-        properties:
+        📝:
           goal:
-            const: "To serve the project repository over HTTP at example.com"
+            🔒: "To serve the project repository over HTTP at example.com"
           role:
-            const: "HTTP interface for the digital organism."
+            🔒: "HTTP interface for the digital organism."
           conditions:
-            const: ["on:demand"]
+            🔒: ["on:demand"]
       spec:
-        properties:
+        📝:
           schema:
-            const: "example.com/🧠/😇/🌐/📓.yaml"
+            🔒: "example.com/🧠/😇/🌐/📓.yaml"
       runtime:
-        properties:
+        📝:
           entrypoint:
-            const: "example.com/🧠/😇/🌐/⚙️.ts"
+            🔒: "example.com/🧠/😇/🌐/⚙️.ts"
           task_name:
-            const: "serve"
-    required:
+            🔒: "serve"
+    ✅:
       - id

@@ -1,0 +1,43 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$path: "example.com/🧠/😇/📜/📓.yaml"
+
+$intent: >
+  This schema defines the structure for the Schema Guardian Angel (😇).
+  It inherits properties from the general Angel schema and adds specific
+  constraints relevant to schema management and optimization.
+
+# Inherit from the general Angel schema
+allOf:
+  - $ref: "example.com/🧠/😇/📓.yaml"
+
+type: object
+properties:
+  id:
+    const: "🧬://😇.schema-guardian.v1"
+  kind:
+    const: "😇"
+  intent:
+    properties:
+      goal:
+        const: "Ensure all schemas (📓.yaml) in the system are consistent and optimized according to the glyph dictionary (📚)."
+      role:
+        const: "Maintainer and enforcer of schema integrity based on glyph definitions."
+  spec:
+    properties:
+      schema:
+        const: "example.com/🧠/😇/📜/📓.yaml"
+      entrypoint:
+        const: "example.com/🧠/😇/📜/reflex.ts"
+      schedule:
+        type: string
+        pattern: "^(\*|([0-5]?\d)(?:,([0-5]?\d))*)\s+(\*|([0-5]?\d)(?:,([0-5]?\d))*)\s+(\*|([01]?\d|2[0-3])(?:,([01]?\d|2[0-3]))*)\s+(\*|([0-2]?\d|3[01])(?:,([0-2]?\d|3[01]))*)\s+(\*|([01]?\d|1[0-2])(?:,([01]?\d|1[0-2]))*)$" # Basic cron pattern
+      config:
+        type: object
+        properties:
+          auto_optimize: { type: "boolean" }
+          report_only_mode: { type: "boolean" }
+required:
+  - id
+  - kind
+  - intent
+  - spec

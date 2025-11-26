@@ -8,7 +8,6 @@ intent:
 
 glyph:
   symbol: "📜"
-  name: "spec"
   description: |
     The '📜' property contains the formal specification of an atom, including
     references to its schema, type definitions, and internal constraints.

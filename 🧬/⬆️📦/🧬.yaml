@@ -1,0 +1,19 @@
+$schema: "../📓.yaml"
+
+🆔: "🧬://⬆️📦"
+🏷️: "glyph"
+
+🧭:
+  🎯: "To represent the '⬆️📦' keyword in JSON Schema, specifying the maximum number of items in an array."
+
+glyph:
+  symbol: "⬆️📦"
+  name: "⬆️📦"
+  description: |
+    The '⬆️📦' glyph corresponds to the JSON Schema '⬆️📦' keyword. It specifies
+    that an array must not contain more than a certain number of items.
+    It combines the concepts of '⬆️' (max) and '📦' (items).
+
+spec:
+  🗃️: integer
+  minimum: 0

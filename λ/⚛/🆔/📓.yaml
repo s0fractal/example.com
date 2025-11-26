@@ -21,11 +21,11 @@ $evolve:
         ♾️: "^🧬://morphism\.identity\.v[0-9]+$"
       🔗: # links
         # Identity has no dependencies, so the array must be empty.
-        maxItems: 0
+        ⬆️📦: 0
       🔌: # io
         📝:
-          input: { maxItems: 1, minItems: 1 }
-          output: { maxItems: 1, minItems: 1 }
+          input: { ⬆️📦: 1, minItems: 1 }
+          output: { ⬆️📦: 1, minItems: 1 }
       📜: # spec
         📝:
           📓: # Changed from schema
@@ -49,7 +49,7 @@ $evolve:
               dirs:
                 🗃️: array
                 📦: { 🗃️: string }
-                maxItems: 0
+                ⬆️📦: 0
         ✅:
           - 📓 # Changed from schema
           - purity

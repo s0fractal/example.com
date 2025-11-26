@@ -1,0 +1,17 @@
+$schema: "../📓.yaml"
+
+🆔: "🧬://⬆️"
+🏷️: "glyph"
+
+🧭:
+  🎯: "To represent the 'max' concept, often used with numeric constraints (e.g., maximum value, maximum items)."
+
+glyph:
+  symbol: "⬆️"
+  name: "max"
+  description: |
+    The '⬆️' glyph signifies a maximum limit. In JSON Schema, it can be combined
+    with other glyphs to denote constraints like ⬆️📦, maxLength, maxValue.
+
+spec:
+  🗃️: integer

@@ -54,9 +54,9 @@ $evolve:
             🗃️: { 🗃️: string }
   spec:
     🗃️: object
-    ✅: [schema, purity, layout] # layout is now required in spec
+    ✅: [📓, purity, layout] # Changed from schema
     📝:
-      schema:
+      📓: # Changed from schema
         🗃️: string
         ♾️: "^🏠://λ/⚛/.+\/📓\.yaml$"
       purity:

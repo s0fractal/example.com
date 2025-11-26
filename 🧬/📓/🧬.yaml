@@ -1,0 +1,19 @@
+$schema: "../📓.yaml" # Refers to the schema for glyph definitions
+
+🆔: "🧬://📓" # ID for the conceptual 'schema' property
+🏷️: "glyph"
+
+🧭:
+  🎯: "To represent the 'schema' property within an atom's spec, pointing to its validating 📓.yaml file."
+
+glyph:
+  symbol: "📓"
+  name: "schema_property" # A human-readable name for the property
+  description: |
+    The '📓' glyph, when used as a property key within an atom's '📜' (spec)
+    object, indicates a reference to the 📓.yaml (schema) file that defines
+    and validates the current atom's structure.
+
+spec: # This defines the expected value for the '📓' property
+  🗃️: string
+  ♾️: "^🏠://.+\.📓\.yaml$" # Expects a URI pointing to a 📓.yaml file

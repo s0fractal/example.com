@@ -29,9 +29,9 @@ $evolve:
       conditions: { 🗃️: array, 📦: { 🗃️: string } }
   spec:
     🗃️: object
-    ✅: [schema]
+    ✅: [📓] # Changed from schema
     📝:
-      schema:
+      📓: # Changed from schema
         🗃️: string
         ♾️: "^🏠://🧠/😇/.+\/📓\.yaml$"
   runtime:

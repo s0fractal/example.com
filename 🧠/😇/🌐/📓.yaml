@@ -22,7 +22,7 @@ $intent: "Narrows the general 😇 schema for the specific case of the Server (�
             🔒: ["on:demand"]
       spec:
         📝:
-          schema:
+          📓: # Changed from schema
             🔒: "🏠://🧠/😇/🌐/📓.yaml"
       runtime:
         📝:

@@ -32,7 +32,7 @@ $intent: >
   '📜':
     🗃️: object
     📝:
-      schema:
+      📓: # Changed from schema
         🗃️: string
       layout:
         🗃️: object

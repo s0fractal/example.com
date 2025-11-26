@@ -28,7 +28,7 @@ $evolve:
           output: { maxItems: 1, minItems: 1 }
       📜: # spec
         📝:
-          schema:
+          📓: # Changed from schema
             🔒: "🏠://λ/⚛/🆔/📓.yaml"
           purity:
             🔒: "100% (referentially transparent)"
@@ -51,7 +51,7 @@ $evolve:
                 📦: { 🗃️: string }
                 maxItems: 0
         ✅:
-          - schema
+          - 📓 # Changed from schema
           - purity
           - category_theory
           - layout

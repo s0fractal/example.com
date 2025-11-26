@@ -1,6 +1,6 @@
 # Standard JSON Schema declaration.
 🌟: "https://json-schema.org/draft/2020-12/schema"
-$path: "🏠://📓.yaml"
+$path: "🏠://🧬/📓.yaml"
 
 $intent: >
   Defines the structure for the root 'repo' atom using glyphs. This is the schema
@@ -10,7 +10,7 @@ $intent: >
 ✅: ['$path', '🆔', '🏷️', '🧭', '❤️', '📜']
 📝:
   '$path':
-    🔒: "🏠://🧬.yaml"
+    🔒: "🏠://🧬/🧬.yaml"
   '🆔':
     🗃️: string
     ♾️: "^🧬://.+"

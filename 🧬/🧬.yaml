@@ -1,5 +1,5 @@
-$schema: "./📓.yaml"
-$path: "🏠://🧬.yaml"
+$schema: "./🧬/📓.yaml"
+$path: "🏠://🧬/🧬.yaml"
 
 # --- Main Atom Definition using Glyphs ---
 

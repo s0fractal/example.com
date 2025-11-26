@@ -1,0 +1,35 @@
+# Standard JSON Schema declaration.
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$path: "example.com/🧠/😇/🛡️/schema.yaml"
+
+$intent: "Narrows the general Angel schema for the specific case of the Guardian (🛡️) angel, whose role is to enforce M0 Beacon."
+
+allOf:
+  # 1. Inherit common properties from the parent Angel schema.
+  - $ref: "example.com/🧠/😇/schema.yaml"
+
+  # 2. Add specific, narrowing constraints for the Guardian angel.
+  - type: object
+    properties:
+      id:
+        const: "seed://agent.guardian.v1"
+      intent:
+        properties:
+          goal:
+            const: "Enforce the M0 Beacon (Holographic Identity) principle across all atoms."
+          role:
+            const: "Guardian of structural integrity."
+          conditions:
+            const: ["on:commit", "on:demand"]
+      spec:
+        properties:
+          schema:
+            const: "example.com/🧠/😇/🛡️/schema.yaml"
+      runtime:
+        properties:
+          entrypoint:
+            const: "example.com/🧠/😇/🛡️/reflex.ts"
+          task_name:
+            const: "shield:check"
+    required:
+      - id

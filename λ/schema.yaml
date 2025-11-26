@@ -1,0 +1,76 @@
+# Standard JSON Schema declaration.
+$schema: "https://json-schema.org/draft/2020-12/schema"
+
+# Custom Kairos/Sigma metadata for the general Morphism schema.
+$intent: >
+  This is the parent schema for all morphism atoms. It defines the common
+  structure that any specific morphism (like identity, fold, etc.) must adhere to.
+  Specific morphism schemas will extend and narrow this definition.
+
+$morph:
+  strength: 0.9 # High, as this defines a fundamental category.
+  density_threshold: 3
+
+$evolve:
+  on_error: "spawn:angel(context:morphism_schema_error)"
+  on_density: "fold"
+
+# The JSON Schema definition for any Morphism Seed.
+# It assumes it will be extended by a more general root schema defining 'id'.
+type: object
+required: [kind, intent, io, spec, '$path']
+properties:
+  '$path':
+    type: string
+    pattern: "^example.com/λ/⚛/.+\/seed\.yaml$" # Updated pattern for generic seed.yaml
+  kind:
+    type: string
+    const: "morphism"
+  intent:
+    type: object
+    required: [goal, role]
+    properties:
+      goal: { type: string }
+      role: { type: string }
+  io:
+    type: object
+    required: [input, output]
+    properties:
+      input:
+        type: array
+        items:
+          type: object
+          required: [name, type]
+          properties:
+            name: { type: string }
+            type: { type: string }
+      output:
+        type: array
+        items:
+          type: object
+          required: [name, type]
+          properties:
+            name: { type: string }
+            type: { type: string }
+  spec:
+    type: object
+    required: [schema, purity, layout] # layout is now required in spec
+    properties:
+      schema:
+        type: string
+        pattern: "^example.com/λ/⚛/.+\/schema\.yaml$" # Updated pattern for generic schema.yaml
+      purity:
+        type: string
+        enum: ["100% (referentially transparent)", "99% (pure with exceptions)", "impure"]
+      category_theory:
+        type: string
+      layout: # Layout is now defined here.
+        type: object
+        properties:
+          files:
+            type: array
+            items: { type: string }
+          dirs:
+            type: array
+            items: { type: string }
+          strict: { type: boolean }

@@ -1,0 +1,50 @@
+$path: "example.com/λ/⚛/🆔/seed.yaml"
+id: "seed://morphism.identity.v1"
+kind: "morphism"
+
+intent:
+  goal: "Повернути значення без жодних змін."
+  role: "Нейтральний елемент композиції."
+  conditions: ["on-any-value"]
+  provides: ["morphism.identity"]
+  requires: []
+
+state:
+  energy: 1.0
+  trust: 1.0
+  health: 1.0
+  last_updated: 1763792400 # approx timestamp for this session
+  metrics:
+    invocations: 0
+
+links: [] # No dependencies, it is a primitive.
+
+io:
+  input:
+    - name: "x"
+      type: "a" # Represents a generic type
+  output:
+    - name: "x"
+      type: "a" # Must be the same as the input type
+
+spec:
+  schema: "example.com/λ/⚛/🆔/schema.yaml"
+  purity: "100% (referentially transparent)"
+  category_theory: "Neutral element for function composition"
+  types:
+    # Hindley-Milner signature
+    signature: "forall a. a -> a"
+  constraints:
+    - "output.type === input.type"
+  proofs:
+    - "β-equivalence (trivial)"
+    - "f ∘ id ≡ id ∘ f ≡ f"
+  layout: # New layout property for the identity atom
+    strict: true
+    files:
+      - "seed.yaml"
+      - "schema.yaml"
+      - "README.md"
+      - "reflex.ts" # Local implementation file (optional, but allowed)
+      - "proof.yaml" # Proof metadata
+    dirs: []

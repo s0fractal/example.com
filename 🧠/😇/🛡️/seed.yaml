@@ -1,0 +1,44 @@
+$path: "example.com/🧠/😇/🛡️/seed.yaml"
+id: "seed://agent.guardian.v1"
+kind: "agent"
+
+intent:
+  goal: "Enforce the M0 Beacon (Holographic Identity) principle across all atoms."
+  role: "Guardian of structural integrity."
+  conditions: ["on:commit", "on:demand"]
+  provides: ["validation.m0_beacon"]
+  requires: ["runtime.deno", "fs.read", "fs.glob"]
+
+state:
+  energy: 1.0
+  trust: 1.0
+  health: 1.0
+  last_updated: 1763796000
+  metrics:
+    files_scanned: 0
+    errors_found: 0
+
+links:
+  - rel: "governs"
+    ref: "principle://atomic-containment" # Example link to a principle
+  - rel: "implements"
+    ref: "principle://M0-holographic-identity"
+
+# IO for an agent is less about data transformation and more about triggers and reports.
+io:
+  input:
+    - name: "trigger"
+      type: "signal" # e.g., 'pre-commit' or 'manual_run'
+  output:
+    - name: "report"
+      type: "validation_result"
+
+spec:
+  schema: "example.com/🧠/😇/🛡️/schema.yaml"
+  purity: "impure" # Interacts with the filesystem
+  constraints:
+    - "must have read access to the entire repository"
+
+runtime:
+  entrypoint: "example.com/🧠/😇/🛡️/reflex.ts"
+  task_name: "shield:check"

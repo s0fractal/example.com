@@ -1,0 +1,41 @@
+$path: "example.com/seed.yaml"
+id: "seed://example.com.v1"
+kind: "repo"
+intent:
+  goal: "To contain and evolve a self-describing digital organism."
+  role: "The root cell and container for the entire system."
+  conditions:
+    - "on-genesis"
+  provides:
+    - "morphism.repository.contain"
+    - "morphism.repository.evolve"
+  requires: []
+state:
+  energy: 1.0
+  trust: 1.0
+  health: 1.0
+  last_updated: 1763789400
+  metrics:
+    total_atoms: 0
+    total_links: 0
+links:
+  - rel: "defines"
+    ref: "seed://schemas.seed.v1" # This will need to be a real schema atom later
+io:
+  input: []
+  output: []
+spec:
+  schema: "example.com/schema.yaml"
+  types: {}
+  constraints:
+    - "All contained atoms must be valid seeds."
+  layout:
+    strict: false # Not strict for now, as we are still in development
+    files:
+      - "*.md"
+      - "*.yaml"
+      - "deno.json"
+    dirs:
+      - "🧠/"
+      - "λ/"
+      - "⚖/"

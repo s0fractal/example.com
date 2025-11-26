@@ -1,3 +1,6 @@
+---
+$path: "example.com/README.md"
+---
 # λ⁷ ⊸ Σ: Holographic Computational Field with Ontological Embedding
 
 This document outlines **λ⁷ ⊸ Σ** — a formal system designed to bridge fundamental computational primitives with an ontological superstructure, viewed through the lens of denotational semantics, category theory intuition, and physical analogy. It clearly delineates levels of **syntax**, **denotation**, **dynamics**, **constraints**, and **reflexivity**.
@@ -8,25 +11,17 @@ This document outlines **λ⁷ ⊸ Σ** — a formal system designed to bridge f
 
 ### 1.1 Basis of Morphisms
 Let
-\[
-\mathcal{M} = \{ \iota, @, \lambda, \land, \lnot, ?, \otimes \}
-\]
-be a finite set of **generator-morphisms**.
+[...]
 
 ### 1.2 Computational Field
 We define a **7-dimensional discrete vector space over $\mathbb{N}$**:
-\[
-V = \mathbb{N}^7 = \left\{ (\alpha_1, \dots, \alpha_7) \mid \alpha_i \in \mathbb{N} \right\}
-\]
+[...]
 
 An element \( v \in V \) is called a **computational state**.
 
 ### 1.3 Tensor Algebra of Interactions
 Let
-\[
-\mathbb{T} : \mathcal{M} \times \mathcal{M} \times \mathcal{M} \to \mathcal{P}(V)
-\]
-be a partially defined **tensor operation** that specifies the result of composing three morphisms (e.g., $\beta$-reduction: \( \mathbb{T}(\lambda, @, x) = x \)).
+[...]
 
 Extend \( \mathbb{T} \) linearly to \( V^{\otimes 3} \to V \).
 
@@ -36,24 +31,15 @@ Extend \( \mathbb{T} \) linearly to \( V^{\otimes 3} \to V \).
 
 ### 2.1 Signature as an Ordered Structure
 A Signature is a pair
-\[
-\sigma = (\mathtt{name}, F)
-\]
-where \( F = \{ k_i : \tau_i \}_{i=1}^n \), and \( \tau_i \in \{ \texttt{String}, \texttt{Blob} \} \cup \Sigma \).
+[...]
 
 ### 2.2 Rule as a Transformation
 A Rule is a quadruple
-\[
-\rho = (\mathtt{name}, \vec{\sigma}_{\text{in}}, \vec{\sigma}_{\text{out}}, \Phi)
-\]
-where \( \Phi \) is an expression in a minimal DSL (see Appendix A).
+[...]
 
 ### 2.3 Derivation as an Event
 A Derivation is a triple
-\[
-\delta = (\rho, \vec{v}_{\text{in}}, \vec{v}_{\text{out}})
-\]
-where \( \vec{v}_{\text{in}}, \vec{v}_{\text{out}} \in V^* \).
+[...]
 
 ---
 
@@ -62,24 +48,16 @@ where \( \vec{v}_{\text{in}}, \vec{v}_{\text{out}} \in V^* \).
 We define the **denotation** of Σ-constructs within the λ⁷-field.
 
 ### 3.1 Signature → Vector
-\[
-\llbracket \sigma \rrbracket = v_\sigma \in V
-\]
-where \( v_\sigma \) is the minimal vector encoding the constructor \( \sigma \) in an SKI-like form, decomposed into \( \mathcal{M} \).
+[...]
 
 > Example:
 > \( \llbracket \texttt{File} \rrbracket = [0, 1, 2, 0, 0, 0, 1] \)
 
 ### 3.2 Rule → Operator
-\[
-\llbracket \rho \rrbracket = \mathcal{R}_\rho \in \mathrm{End}(V)
-\]
-where \( \mathcal{R}_\rho \) is a composition of tensor operations \( \mathbb{T} \) in the order specified by the expression \( \Phi \).
+[...]
 
 ### 3.3 Derivation → Evolution
-\[
-\llbracket \delta \rrbracket = \mathcal{R}_\rho(\vec{v}_{\text{in}}) = \vec{v}_{\text{out}}
-\]
+[...]
 
 ---
 
@@ -87,23 +65,15 @@ where \( \mathcal{R}_\rho \) is a composition of tensor operations \( \mathbb{T}
 
 ### 4.1 Field as System State
 The global state is a **multiset** of computational states:
-\[
-\Psi \subseteq_{\text{fin}} V
-\]
+[...]
 
 ### 4.2 Evolution
 Evolution operator:
-\[
-\mathcal{E}(\Psi) = \bigcup_{v \in \Psi} \bigcup_{\rho \in \mathcal{R}} \mathcal{R}_\rho(v)
-\quad \text{subject to constraints}
-\]
+[...]
 
 ### 4.3 Measurement (Evaluation)
 The **collapse** function:
-\[
-\mathrm{eval} : V \to \mathcal{U}
-\]
-where \( \mathcal{U} \) is the universe of values (strings, bytes, graphs) obtained after normalization.
+[...]
 
 ---
 
@@ -113,14 +83,10 @@ where \( \mathcal{U} \) is the universe of values (strings, bytes, graphs) obtai
 Each constraint \( c \) defines a predicate \( P_c : V^* \to \{0,1\} \).
 
 ### 5.2 Projection
-\[
-\mathcal{P}_c(\Psi) = \{ v \in \Psi \mid P_c(v) = 1 \}
-\]
+[...]
 
 Evolution with constraints:
-\[
-\Psi_{t+1} = \mathcal{P}_{\text{all}} \left( \mathcal{E}(\Psi_t) \right)
-\]
+[...]
 
 ---
 
@@ -134,20 +100,10 @@ Every Σ-construct has its own Signature:
 
 ### 6.2 Embedding
 Since λ⁷ is Turing-complete, a Gödel encoding exists:
-\[
-\# : \Sigma\text{-Calculus} \to V
-\]
-such that:
-\[
-\llbracket \sigma \rrbracket = \#(\sigma)
-\]
+[...]
 
 That is:
-\[
-\forall x \in \Sigma,\ \llbracket x \rrbracket \in V
-\quad \text{and} \quad
-\llbracket \Sigma \rrbracket \subseteq V
-\]
+[...]
 
 ---
 
@@ -155,9 +111,7 @@ That is:
 
 > **Theorem**.
 > A full and faithful embedding exists from the category of Σ-Calculus into the category of vector spaces over $\mathbb{N}$ with tensor transformations:
-\[
-\llbracket \cdot \rrbracket : \mathbf{SigmaCalc} \hookrightarrow \mathbf{Vect}_\mathbb{N}^{\otimes}
-\]
+[...]
 > such that:
 > - Σ objects (Signatures) ↦ vectors \( V \),
 > - Σ morphisms (Rules) ↦ tensor operators,

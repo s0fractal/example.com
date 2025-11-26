@@ -1,0 +1,62 @@
+# Standard JSON Schema declaration.
+$schema: "https://json-schema.org/draft/2020-12/schema"
+# The schema itself must know where it lives.
+$path: "example.com/λ/⚛/🆔/schema.yaml"
+
+# Custom Kairos/Sigma metadata for the Identity morphism.
+$intent: "Narrows the general Morphism schema for the specific case of Identity (🆔)."
+$evolve:
+  on_error: "system:panic" # An error in Identity is a critical failure.
+
+allOf:
+  # 1. Inherit all common properties from the parent morphism schema.
+  - $ref: "example.com/λ/schema.yaml"
+
+  # 2. Add specific, narrowing constraints for the Identity morphism.
+  - type: object
+    properties:
+      # Enforce the M0 Beacon principle for the seed file itself.
+      '$path':
+        const: "example.com/λ/⚛/🆔/seed.yaml"
+      id:
+        pattern: "^seed://morphism\.identity\.v[0-9]+$"
+      links:
+        # Identity has no dependencies, so the array must be empty.
+        maxItems: 0
+      io:
+        properties:
+          input: { maxItems: 1, minItems: 1 }
+          output: { maxItems: 1, minItems: 1 }
+      spec:
+        properties:
+          schema:
+            const: "example.com/λ/⚛/🆔/schema.yaml"
+          purity:
+            const: "100% (referentially transparent)"
+          category_theory:
+            const: "Neutral element for function composition"
+          layout:
+            type: object
+            properties:
+              strict: { type: boolean, const: true }
+              files:
+                type: array
+                items: { type: string }
+                const:
+                  - "seed.yaml"
+                  - "schema.yaml"
+                  - "README.md"
+                  - "reflex.ts"
+                  - "proof.yaml"
+              dirs:
+                type: array
+                items: { type: string }
+                maxItems: 0
+        required:
+          - schema
+          - purity
+          - category_theory
+          - layout
+    required:
+      - id
+      - '$path'

@@ -46,7 +46,6 @@ allOf:
                   - "seed.yaml"
                   - "schema.yaml"
                   - "README.md"
-                  - "reflex.ts"
                   - "proof.yaml"
               dirs:
                 type: array

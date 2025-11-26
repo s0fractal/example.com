@@ -45,6 +45,5 @@ spec:
       - "seed.yaml"
       - "schema.yaml"
       - "README.md"
-      - "reflex.ts" # Local implementation file (optional, but allowed)
       - "proof.yaml" # Proof metadata
     dirs: []

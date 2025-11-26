@@ -29,7 +29,7 @@ $path: "example.com/README3.md"
 🧬:
   id: "" # Унікальний і стабільний ID
   kind: "" # Який це тип вузла (😇|morphism|module|dir|repo|glyph|pattern)
-  intent: {} # Що вузол хоче / для чого існує
+  🧭: {} # Що вузол хоче / для чого існує
   state: {} # Поточний стан (динамічний)
   links: [] # Фрактальні зв’язки (інша онтологія)
   io: {} # Вхід/вихід (сигнатури)
@@ -78,7 +78,7 @@ sig://{namespace}/{name}/{version}
 -   `repo`
 -   `glyph`
 -   `pattern`
--   `intent` (як окремий вид вузла)
+-   `🧭` (як окремий вид вузла)
 -   `sim` (мікросимуляції)
 -   `🧬` (мета-визначення 🧬)
 
@@ -86,7 +86,7 @@ sig://{namespace}/{name}/{version}
 
 ---
 
-# 🔴 3) `intent` — найважливіше поле
+# 🔴 3) `🧭` — найважливіше поле
 
 Інтент — це **для чого існує вузол**.
 
@@ -208,7 +208,7 @@ spec:
   id: "🧬://module.fs.v1"
   kind: "module"
 
-  intent:
+  🧭:
     goal: "Файлова проекція"
     role: "модуль доступу до файлової системи"
     conditions: ["on-demand", "😇-request"]
@@ -253,7 +253,7 @@ spec:
 export interface Sigma🧬 {
   id: string; // 🧬://...
   kind: SigmaKind; // 😇|morphism|module|...
-  intent: SigmaIntent;
+  🧭: Sigma🧭;
   state: SigmaState;
   links: SigmaLink[];
   io: SigmaIO;
@@ -269,10 +269,10 @@ export type SigmaKind =
   | "glyph"
   | "pattern"
   | "🧬"
-  | "intent"
+  | "🧭"
   | "sim";
 
-export interface SigmaIntent {
+export interface Sigma🧭 {
   goal: string;
   role: string;
   conditions: string[];

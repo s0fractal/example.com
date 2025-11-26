@@ -15,12 +15,12 @@ $evolve:
 
 # The JSON Schema definition for any 😇 🧬.
 🗃️: object
-✅: [kind, intent, spec, runtime]
+✅: [kind, 🧭, spec, runtime] # Changed from intent
 📝:
   kind:
     🗃️: string
     🔒: "😇" # 😇s are a type of 😇
-  intent:
+  🧭: # Changed from intent
     🗃️: object
     ✅: [goal, role, conditions]
     📝:

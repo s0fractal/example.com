@@ -12,7 +12,7 @@ $intent: "Narrows the general 😇 schema for the specific case of the Guardian 
     📝:
       id:
         🔒: "🧬://😇.guardian.v1"
-      intent:
+      🧭: # Changed from intent
         📝:
           goal:
             🔒: "Enforce the M0 Beacon (Holographic Identity) principle across all atoms."

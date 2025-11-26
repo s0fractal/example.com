@@ -16,7 +16,7 @@ $intent: >
     🔒: "🧬://😇.schema-guardian.v1"
   kind:
     🔒: "😇"
-  intent:
+  🧭: # Changed from intent
     📝:
       goal:
         🔒: "Ensure all schemas (📓.yaml) in the system are consistent and optimized according to the glyph dictionary (📚)."
@@ -30,7 +30,7 @@ $intent: >
         🔒: "example.com/🧠/😇/📜/reflex.ts"
       schedule:
         🗃️: string
-        ♾️: "^(\*|([0-5]?\\d)(?:,([0-5]?\\d))*)\\s+(\*|([0-5]?\\d)(?:,([0-5]?\\d))*)\\s+(\*|([01]?\\d|2[0-3])(?:,([01]?\\d|2[0-3]))*)\\s+(\*|([0-2]?\\d|3[01])(?:,([0-2]?\\d|3[01]))*)\\s+(\*|([01]?\\d|1[0-2])(?:,([01]?\\d|1[0-2]))*)$" # Basic cron pattern
+        ♾️: "^(\*|([0-5]?\d)(?:,([0-5]?\d))*)\s+(\*|([0-5]?\d)(?:,([0-5]?\d))*)\s+(\*|([01]?\d|2[0-3])(?:,([01]?\d|2[0-3]))*)\s+(\*|([0-2]?\d|3[01])(?:,([0-2]?\d|3[01]))*)\s+(\*|([01]?\d|1[0-2])(?:,([01]?\d|1[0-2]))*)$" # Basic cron pattern
       config:
         🗃️: object
         📝:
@@ -39,5 +39,5 @@ $intent: >
 ✅:
   - id
   - kind
-  - intent
+  - 🧭 # Changed from intent
   - spec

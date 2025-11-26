@@ -7,7 +7,7 @@ $intent: >
   for the 🧬 that represents the entire repository itself.
 
 🗃️: object
-✅: ['$path', '🆔', '🏷️', '🎯', '❤️', '📜']
+✅: ['$path', '🆔', '🏷️', '🧭', '❤️', '📜']
 📝:
   '$path':
     🔒: "example.com/🧬.yaml"
@@ -18,7 +18,7 @@ $intent: >
     🗃️: string
     📊:
       - "repo"
-  '🎯':
+  '🧭':
     🗃️: object
     📝:
       goal: { 🗃️: "string" }

@@ -7,7 +7,7 @@
 export interface Sigma🧬 {
   id: string; // 🧬://...
   kind: SigmaKind; // 😇|morphism|module|...
-  intent: SigmaIntent;
+  intent: Sigma🧭;
   state: SigmaState;
   links: SigmaLink[];
   io: SigmaIO;
@@ -23,10 +23,10 @@ export type SigmaKind =
   | "glyph"
   | "pattern"
   | "🧬"
-  | "intent"
+  | "🧭"
   | "sim";
 
-export interface SigmaIntent {
+export interface Sigma🧭 {
   goal: string;
   role: string;
   conditions: string[];

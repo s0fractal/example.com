@@ -18,7 +18,7 @@ $evolve:
 # The JSON Schema definition for any Morphism 🧬.
 # It assumes it will be extended by a more general root schema defining 'id'.
 🗃️: object
-✅: [kind, intent, io, spec, "$path"]
+✅: [kind, 🧭, io, spec, "$path"]
 📝:
   "$path":
     🗃️: string
@@ -26,7 +26,7 @@ $evolve:
   kind:
     🗃️: string
     🔒: "morphism"
-  intent:
+  🧭: # Changed from intent
     🗃️: object
     ✅: [goal, role]
     📝:
